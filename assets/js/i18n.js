@@ -27,6 +27,13 @@ window.I18N = {
       cow: { title: "Сиыр терісінен тігілген шұлық мәсі", desc: "1,2–1,6 мм қалыңдықтағы сиыр терісінен тігілген беріктігі жоғары мәсі, ою-өрнекпен және өрнексіз нұсқада.", price: "27 000 ₸-ден" },
       socks: { title: "Ақ-қара түсті носки-шұлық мәсі", desc: "Аяққа жайлы отыратын, жеңіл әрі тар қалыптағы носки-стиліндегі мәсі.", price: "13 000 – 21 000 ₸" }
     },
+    custom: {
+      eyebrow: "Жеке тапсырыс", title: "Жеке арнайы тапсырыс беру",
+      subtitle: "Ерекше сәтке арналған бірегей мәсі — тек сізге, тек сіздің талғамыңызға сай тігіледі.",
+      price_note: "Баға — тапсырыс бойынша",
+      toi: { title: "Түнгі той, тұсау кесер және сахналық би", desc: "Ерекше кештің қаһарманына айналыңыз! Түнгі тойға, тұсау кесерге немесе сахналық биге арналған салтанатты мәсі назарды өзіне аударады." },
+      jeke: { title: "Ересектердің жеке тапсырысы", desc: "Өз қиялыңыздағы мәсіні шындыққа айналдырыңыз — түсінен ою-өрнегіне дейін толығымен сіздің қалауыңызға және жеке өлшеміңізге сай қолмен тігіледі.", price: "150 000 ₸-ге дейін" }
+    },
     colors: { tan: "Күрең", white: "Ақ", black: "Қара", green: "Жасыл", rosegold: "Раушан алтын", pearl: "Інжу", leopard: "Барыс өрнегі", cream: "Кремді",
       other_list: "сұр, ақ, қара, қызыл, сары, бордо, көк" },
     about: {
@@ -94,6 +101,13 @@ window.I18N = {
       goat: { title: "Мәси-носки из козьей кожи", desc: "Лёгкие мәси ручной работы из тонкой и мягкой козьей кожи — для повседневной носки и в подарок.", price: "12 000 – 15 000 ₸" },
       cow: { title: "Мäси-носки из воловьей кожи", desc: "Прочные мäси из воловьей кожи толщиной 1,2–1,6 мм, с орнаментом и без.", price: "от 27 000 ₸" },
       socks: { title: "Мäси-носки бело-чёрных тонов", desc: "Лёгкие мäси в стиле носка узкой колодки, комфортные для стопы.", price: "13 000 – 21 000 ₸" }
+    },
+    custom: {
+      eyebrow: "Индивидуальный заказ", title: "Индивидуальный особый заказ",
+      subtitle: "Уникальные мäси для особого момента — шьются только для вас и по вашему вкусу.",
+      price_note: "Цена — по договорённости",
+      toi: { title: "Вечерний той, тусау кесер и сценический танец", desc: "Станьте главным героем особого вечера! Торжественные мäси для вечернего тоя, тусау кесер или сценического танца притягивают все взгляды." },
+      jeke: { title: "Индивидуальный заказ для взрослых", desc: "Воплотите мäси своей мечты — от цвета до орнамента всё шьётся вручную по вашему желанию и точно по вашему размеру.", price: "до 150 000 ₸" }
     },
     colors: { tan: "Рыжевато-коричневый", white: "Белый", black: "Чёрный", green: "Зелёный", rosegold: "Розовое золото", pearl: "Жемчужный", leopard: "Леопардовый", cream: "Кремовый",
       other_list: "серый, белый, чёрный, красный, жёлтый, бордовый, синий" },
@@ -163,6 +177,13 @@ window.I18N = {
       cow: { title: "Cow-leather mäsi boots", desc: "Durable mäsi made from 1.2–1.6 mm cow leather, available with or without embroidery.", price: "from ₸27,000" },
       socks: { title: "Black-and-white sock-style mäsi", desc: "Lightweight, snug-fitting sock-style mäsi that sits comfortably on the foot.", price: "₸13,000 – 21,000" }
     },
+    custom: {
+      eyebrow: "Custom Orders", title: "Personal Custom Orders",
+      subtitle: "One-of-a-kind mäsi for your special moment — made only for you, exactly to your taste.",
+      price_note: "Price on request",
+      toi: { title: "Evening celebrations, tusau kesu & stage performances", desc: "Become the star of the evening! Statement mäsi crafted for night wedding parties, the tusau kesu first-steps ceremony, or stage dance performances — designed to turn heads." },
+      jeke: { title: "Custom orders for adults", desc: "Bring your dream mäsi to life — from color to embroidery, everything is handcrafted exactly to your wishes and your size.", price: "up to ₸150,000" }
+    },
     colors: { tan: "Tan", white: "White", black: "Black", green: "Green", rosegold: "Rose gold", pearl: "Pearl", leopard: "Leopard print", cream: "Cream",
       other_list: "gray, white, black, red, yellow, burgundy, blue" },
     about: {
@@ -230,6 +251,13 @@ window.I18N = {
       goat: { title: "Echki terisidan tikilgan masi-paypoq", desc: "Yupqa va yumshoq echki terisidan qo'lda tikilgan yengil masi — kundalik kiyish va sovg'a uchun qulay.", price: "12 000 – 15 000 ₸" },
       cow: { title: "Mol terisidan tikilgan masi-paypoq", desc: "1,2–1,6 mm qalinlikdagi mol terisidan tikilgan mustahkam masi, naqshli va naqshsiz variantda.", price: "27 000 ₸ dan" },
       socks: { title: "Oq-qora rangdagi paypoq uslubidagi masi", desc: "Oyoqqa qulay o'tiradigan, yengil va tor qolipdagi paypoq uslubidagi masi.", price: "13 000 – 21 000 ₸" }
+    },
+    custom: {
+      eyebrow: "Individual buyurtma", title: "Shaxsiy maxsus buyurtma",
+      subtitle: "Alohida lahza uchun betakror masi — faqat siz uchun, faqat sizning didingizga mos tikiladi.",
+      price_note: "Narxi — kelishuv asosida",
+      toi: { title: "Kechki to'y, tusau kesar va sahna raqsi", desc: "Alohida kechaning qahramoniga aylaning! Kechki to'y, tusau kesar yoki sahna raqsi uchun tikilgan tantanali masi barcha nigohlarni o'ziga tortadi." },
+      jeke: { title: "Kattalar uchun individual buyurtma", desc: "Orzuingizdagi masini haqiqatga aylantiring — rangidan naqshigacha barchasi sizning xohishingiz va o'lchamingizga mos qo'lda tikiladi.", price: "150 000 ₸ gacha" }
     },
     colors: { tan: "Jigarrang", white: "Oq", black: "Qora", green: "Yashil", rosegold: "Atirgul-oltin", pearl: "Marvarid", leopard: "Leopard naqshi", cream: "Krem rang",
       other_list: "kulrang, oq, qora, qizil, sariq, bordo, ko'k" },
@@ -299,6 +327,13 @@ window.I18N = {
       cow: { title: "Уй терисинен тигилген маси-байпак", desc: "1,2–1,6 мм калыңдыктагы уй терисинен тигилген бекем маси, оюм-чийме менен жана чиймесиз.", price: "27 000 ₸ дан" },
       socks: { title: "Ак-кара түстөгү байпак-стилиндеги маси", desc: "Бутка ыңгайлуу отурган, жеңил жана тар калыптагы байпак стилиндеги маси.", price: "13 000 – 21 000 ₸" }
     },
+    custom: {
+      eyebrow: "Жеке буйрутма", title: "Жеке атайын буйрутма берүү",
+      subtitle: "Өзгөчө учур үчүн кайталангыс маси — жалгыз гана сиз үчүн, сиздин табитиңизге ылайык тигилет.",
+      price_note: "Баасы — макулдашуу боюнча",
+      toi: { title: "Кечки той, түшөө кесер жана сахналык бий", desc: "Өзгөчө кечтин каарманына айланыңыз! Кечки той, түшөө кесер же сахналык бий үчүн тигилген салтанаттуу маси бардык көздөрдү өзүнө тартат." },
+      jeke: { title: "Чоңдор үчүн жеке буйрутма", desc: "Түшүңүздөгү маситти чындыкка айландырыңыз — түсүнөн оюм-чиймесине чейин баары сиздин каалооңузга жана өлчөмүңүзгө ылайык кол менен тигилет.", price: "150 000 ₸ чейин" }
+    },
     colors: { tan: "Күрөң", white: "Ак", black: "Кара", green: "Жашыл", rosegold: "Раушан алтын", pearl: "Берметт", leopard: "Барс оюму", cream: "Кремдей",
       other_list: "боз, ак, кара, кызыл, сары, бордо, көк" },
     about: {
@@ -366,6 +401,13 @@ window.I18N = {
       goat: { title: "ماسي من جلد الماعز", desc: "حذاء ماسي خفيف مصنوع يدويًا من جلد الماعز الرقيق والناعم — مناسب للارتداء اليومي وكهدية.", price: "١٢٬٠٠٠ – ١٥٬٠٠٠ ₸" },
       cow: { title: "ماسي من جلد البقر", desc: "حذاء ماسي متين مصنوع من جلد بقر بسماكة ١٫٢–١٫٦ مم، بزخرفة أو بدونها.", price: "من ٢٧٬٠٠٠ ₸" },
       socks: { title: "ماسي على شكل جورب بالأبيض والأسود", desc: "حذاء ماسي خفيف بقالب ضيق يلائم القدم بشكل مريح.", price: "١٣٬٠٠٠ – ٢١٬٠٠٠ ₸" }
+    },
+    custom: {
+      eyebrow: "طلب خاص", title: "طلب مخصص شخصي",
+      subtitle: "ماسي فريد للحظتك الخاصة — يُصنع لك وحدك، وفق ذوقك تمامًا.",
+      price_note: "السعر حسب الطلب",
+      toi: { title: "حفلات المساء، حفل تُساو كيسر، والعروض الراقصة على المسرح", desc: "كن نجم أمسيتك الخاصة! أحذية ماسي احتفالية مصممة لحفلات الزفاف المسائية، وحفل تُساو كيسر (خطوات الطفل الأولى)، أو العروض الراقصة على المسرح — تلفت كل الأنظار." },
+      jeke: { title: "طلب مخصص للبالغين", desc: "حوّل ماسي أحلامك إلى حقيقة — من اللون إلى الزخرفة، كل التفاصيل تُصنع يدويًا وفق رغبتك ومقاسك بالضبط.", price: "حتى ١٥٠٬٠٠٠ ₸" }
     },
     colors: { tan: "بني فاتح", white: "أبيض", black: "أسود", green: "أخضر", rosegold: "ذهبي وردي", pearl: "لؤلؤي", leopard: "نقشة النمر", cream: "كريمي",
       other_list: "رمادي، أبيض، أسود، أحمر، أصفر، خمري، أزرق" },
@@ -435,6 +477,13 @@ window.I18N = {
       cow: { title: "Sığır derisinden dikilen mesi çorap ayakkabı", desc: "1,2–1,6 mm kalınlığında sığır derisinden dikilen dayanıklı mesi, motifli ve motifsiz seçenekleriyle.", price: "27.000 ₸'den başlayan" },
       socks: { title: "Beyaz-siyah tonlarda çorap model mesi", desc: "Ayağa rahat oturan, hafif ve dar kalıplı çorap tarzı mesi.", price: "13.000 – 21.000 ₸" }
     },
+    custom: {
+      eyebrow: "Özel Sipariş", title: "Kişiye Özel Sipariş",
+      subtitle: "Özel anınız için eşsiz bir mesi — yalnızca size, tamamen zevkinize göre dikilir.",
+      price_note: "Fiyat talebe göre belirlenir",
+      toi: { title: "Gece düğünleri, tusau keser ve sahne dansı", desc: "Özel bir gecenin yıldızı olun! Gece düğünleri, tusau keser (ilk adım) töreni veya sahne dansı için dikilen gösterişli mesi tüm dikkatleri üzerine çeker." },
+      jeke: { title: "Yetişkinler için özel sipariş", desc: "Hayalinizdeki mesiyi gerçeğe dönüştürün — renginden motifine kadar her şey isteğinize ve ölçünüze göre elde dikilir.", price: "150.000 ₸'ye kadar" }
+    },
     colors: { tan: "Taba", white: "Beyaz", black: "Siyah", green: "Yeşil", rosegold: "Rose gold", pearl: "İnci", leopard: "Leopar desenli", cream: "Krem",
       other_list: "gri, beyaz, siyah, kırmızı, sarı, bordo, mavi" },
     about: {
@@ -502,6 +551,13 @@ window.I18N = {
       goat: { title: "山羊皮马西袜靴", desc: "采用轻薄柔软的山羊皮纯手工缝制的轻便马西靴——日常穿着或送礼皆宜。", price: "12,000 – 15,000 坚戈" },
       cow: { title: "牛皮马西袜靴", desc: "采用1.2–1.6毫米厚牛皮缝制的耐用马西靴，提供带图案与无图案款式。", price: "27,000 坚戈起" },
       socks: { title: "黑白色系袜靴款马西", desc: "版型贴合、轻便舒适的袜靴风格马西鞋。", price: "13,000 – 21,000 坚戈" }
+    },
+    custom: {
+      eyebrow: "定制服务", title: "个性化专属定制",
+      subtitle: "为您的特别时刻打造独一无二的马西靴——完全按照您的喜好，专属为您缝制。",
+      price_note: "价格面议",
+      toi: { title: "晚间庆典、剪脐带仪式与舞台表演", desc: "成为当晚的焦点！专为晚间婚礼庆典、图绍克瑟尔（婴儿学步礼）或舞台舞蹈表演打造的华丽马西靴，让您光彩夺目。" },
+      jeke: { title: "成人个性化定制", desc: "让您梦想中的马西靴成为现实——从颜色到图案，完全按照您的意愿与脚型纯手工缝制。", price: "最高150,000坚戈" }
     },
     colors: { tan: "棕黄色", white: "白色", black: "黑色", green: "深绿色", rosegold: "玫瑰金色", pearl: "珍珠白", leopard: "豹纹", cream: "奶油色",
       other_list: "灰色、白色、黑色、红色、黄色、酒红色、蓝色" },

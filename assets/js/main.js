@@ -46,6 +46,19 @@ function waLink(phone, text){
   return "https://wa.me/" + phone + (text ? ("?text=" + encodeURIComponent(text)) : "");
 }
 
+function waMsgForTitle(lang, title){
+  return {
+    kk: "Сәлеметсіз бе! \"" + title + "\" туралы сұрағым бар еді.",
+    ru: "Здравствуйте! Хочу узнать про \"" + title + "\".",
+    en: "Hello! I'd like to ask about the \"" + title + "\".",
+    uz: "Assalomu alaykum! \"" + title + "\" haqida so'ramoqchi edim.",
+    ky: "Салам! \"" + title + "\" жөнүндө сурайын деп edim.",
+    ar: "مرحبًا! أود الاستفسار عن \"" + title + "\".",
+    tr: "Merhaba! \"" + title + "\" hakkında bilgi almak istiyorum.",
+    zh: "您好！我想咨询「" + title + "」。"
+  }[lang] || "";
+}
+
 /* ---------------- PRODUCT DATA ---------------- */
 var CATEGORIES = [
   {
@@ -102,6 +115,33 @@ var CATEGORIES = [
   }
 ];
 
+var CUSTOM_ORDERS = [
+  {
+    key: "toi",
+    hasPrice: false,
+    slides: [
+      { type:"video", src:"assets/video/toi-1.mp4" },
+      { type:"video", src:"assets/video/toi-2.mp4" },
+      { type:"video", src:"assets/video/toi-3.mp4" },
+      { type:"video", src:"assets/video/toi-4.mp4" }
+    ]
+  },
+  {
+    key: "jeke",
+    hasPrice: true,
+    slides: [
+      { type:"image", src:"assets/images/jeke/photo-3.jpg" },
+      { type:"image", src:"assets/images/jeke/photo-4.jpg" },
+      { type:"image", src:"assets/images/jeke/photo-5.jpg" },
+      { type:"image", src:"assets/images/jeke/photo-1.jpg" },
+      { type:"image", src:"assets/images/jeke/photo-2.jpg" },
+      { type:"video", src:"assets/video/jeke-1.mp4" },
+      { type:"video", src:"assets/video/jeke-2.mp4" },
+      { type:"video", src:"assets/video/jeke-3.mp4" }
+    ]
+  }
+];
+
 var GALLERY_ITEMS = [
   {type:"image", src:"assets/images/gallery/teal-gold.jpg"},
   {type:"image", src:"assets/images/gallery/brocade-gold.jpg"},
@@ -155,6 +195,7 @@ function applyI18n(lang){
 
   renderMarquee(lang);
   renderCategories(lang);
+  renderCustomOrders(lang);
   renderGallery(lang);
   renderReviews(lang);
   updateWaLinks(lang);
@@ -309,16 +350,58 @@ function renderCategories(lang){
     });
 
     var ctaLink = cardEl.querySelector("[data-cat-cta]");
-    var msg = {
-      kk: "Сәлеметсіз бе! \"" + t(currentLang,"cat."+catKey+".title") + "\" туралы сұрағым бар еді.",
-      ru: "Здравствуйте! Хочу узнать про \"" + t(currentLang,"cat."+catKey+".title") + "\".",
-      en: "Hello! I'd like to ask about the \"" + t(currentLang,"cat."+catKey+".title") + "\".",
-      uz: "Assalomu alaykum! \"" + t(currentLang,"cat."+catKey+".title") + "\" haqida so'ramoqchi edim.",
-      ky: "Салам! \"" + t(currentLang,"cat."+catKey+".title") + "\" жөнүндө сурайын деп edim.",
-      ar: "مرحبًا! أود الاستفسار عن \"" + t(currentLang,"cat."+catKey+".title") + "\".",
-      tr: "Merhaba! \"" + t(currentLang,"cat."+catKey+".title") + "\" hakkında bilgi almak istiyorum.",
-      zh: "您好！我想咨询「" + t(currentLang,"cat."+catKey+".title") + "」。"
-    }[currentLang] || "";
+    var msg = waMsgForTitle(currentLang, t(currentLang, "cat."+catKey+".title"));
+    ctaLink.setAttribute("href", waLink(WA_PHONE, msg));
+  });
+}
+
+/* ---------------- CUSTOM ORDERS RENDER ---------------- */
+function renderCustomOrders(lang){
+  var grid = document.getElementById("customGrid");
+  var isRtl = (window.I18N[lang].dir === "rtl");
+  var badgeIcon = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 5.6L19 9l-5.2 1.4L12 16l-1.8-5.6L5 9l5.2-1.4z"/></svg>';
+  var html = "";
+  CUSTOM_ORDERS.forEach(function(item){
+    var slidesHtml = item.slides.map(function(s){
+      if (s.type === "video"){
+        return '<div class="cat-slide"><video src="' + s.src + '" muted loop playsinline preload="metadata"></video><span class="vid-badge">' +
+          '<svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> ' +
+          escapeHtml(t(lang,"reviews.tab_video")) + '</span></div>';
+      }
+      return '<div class="cat-slide"><img src="' + s.src + '" loading="lazy" alt="' + escapeHtml(t(lang,"custom."+item.key+".title")) + '"></div>';
+    }).join("");
+    var dotsHtml = item.slides.map(function(){ return '<span class="cat-dot"></span>'; }).join("");
+    var priceHtml = item.hasPrice
+      ? '<div class="cat-price">' + escapeHtml(t(lang,"custom."+item.key+".price")) + "</div>"
+      : '<div class="custom-price-note">' + escapeHtml(t(lang,"custom.price_note")) + "</div>";
+
+    html += '<div class="cat-card reveal" data-custom="' + item.key + '">' +
+      '<div class="cat-media">' +
+        '<div class="cat-slide-track">' + slidesHtml + "</div>" +
+        '<button class="cat-arrow prev" aria-label="prev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>' +
+        '<button class="cat-arrow next" aria-label="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>' +
+        '<div class="cat-dots">' + dotsHtml + "</div>" +
+      "</div>" +
+      '<div class="cat-body">' +
+        '<div class="custom-badge">' + badgeIcon + "<span>" + escapeHtml(t(lang,"custom.eyebrow")) + "</span></div>" +
+        '<h3 class="cat-title">' + escapeHtml(t(lang,"custom."+item.key+".title")) + "</h3>" +
+        '<p class="cat-desc">' + escapeHtml(t(lang,"custom."+item.key+".desc")) + "</p>" +
+        priceHtml +
+        '<a class="btn btn-wa cat-cta" target="_blank" rel="noopener" href="#" data-custom-cta="' + item.key + '">' +
+          '<svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3z"/></svg>' +
+          "<span>" + escapeHtml(t(lang,"categories.cta")) + "</span>" +
+        "</a>" +
+      "</div>" +
+    "</div>";
+  });
+  grid.innerHTML = html;
+
+  Array.prototype.forEach.call(grid.querySelectorAll(".cat-card"), function(cardEl){
+    cardEl.dir_rtl = isRtl;
+    createCarousel(cardEl);
+    var itemKey = cardEl.getAttribute("data-custom");
+    var ctaLink = cardEl.querySelector("[data-custom-cta]");
+    var msg = waMsgForTitle(currentLang, t(currentLang, "custom."+itemKey+".title"));
     ctaLink.setAttribute("href", waLink(WA_PHONE, msg));
   });
 }

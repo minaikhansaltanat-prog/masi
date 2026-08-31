@@ -7,7 +7,10 @@ TARGETS = [
     ("assets/images/cat-cow", 1400),
     ("assets/images/cat-socks", 1400),
     ("assets/images/gallery", 1600),
-    ("assets/images/brand", 900),
+    ("assets/images/jeke", 1400),
+    # brand/ is handled manually (logo, QR codes) - excluded from this batch
+    # pipeline since resizing a binarized/flat PNG here reintroduces antialiasing
+    # noise and can bloat the file instead of shrinking it.
 ]
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
