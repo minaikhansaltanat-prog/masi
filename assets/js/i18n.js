@@ -2,20 +2,20 @@
 window.I18N = {
   kk: {
     dir: "ltr",
-    meta: { title: "GUMYR — Қолдан тігілген ұлттық мәсі | GUMIR.KZ", desc: "Алматыдағы шеберханада 15 жылдық тәжірибемен қолдан тігілген дәстүрлі қазақ мәсі. Ешкі және сиыр терісінен, той мен күнделікті киюге." },
+    meta: { title: "GUMYR — Қолдан тігілген ұлттық мәсі | GUMIR.KZ", desc: "Алматыдағы шеберханада 10 жылдық тәжірибемен қолдан тігілген дәстүрлі қазақ мәсі. Ешкі және сиыр терісінен, той мен күнделікті киюге." },
     nav: { home: "Басты бет", catalog: "Ассортимент", workshop: "Шеберхана", gallery: "Галерея", reviews: "Пікірлер", contact: "Байланыс", order: "Тапсырыс беру" },
     lang_name: "Қазақша",
     hero: {
-      eyebrow: "15 жылдық шеберлік · Алматы",
+      eyebrow: "10 жылдық шеберлік · Алматы",
       title1: "Әр қадам —", title2: "ұлттық мұра",
       subtitle: "GUMIR.KZ шеберханасында табиғи тері мен дәстүрлі ою-өрнектен қолмен тігілген мәсі. Күнделікті киюге де, ұлттық тойға да.",
       cta1: "Ассортиментті көру", cta2: "WhatsApp арқылы сұрау",
-      stat1v: "15+", stat1l: "жыл тәжірибе",
+      stat1v: "10+", stat1l: "жыл тәжірибе",
       stat2v: "4000+", stat2l: "тігілген жұп",
       stat3v: "100%", stat3l: "табиғи тері",
       scroll: "Төмен түсіңіз"
     },
-    marquee: ["Табиғи тері", "Қолдан тігілген", "Ұлттық ою-өрнек", "Kaspi Pay", "WhatsApp тапсырыс", "Қазақстан бойынша жеткізу", "15 жылдық тәжірибе"],
+    marquee: ["Табиғи тері", "Қолдан тігілген", "Ұлттық ою-өрнек", "Kaspi Pay", "WhatsApp тапсырыс", "Қазақстан бойынша жеткізу", "10 жылдық тәжірибе"],
     categories: {
       eyebrow: "Ассортимент", title: "Үш бағыт, бір шеберлік",
       subtitle: "Әр санат — өз сипаты мен өз ерекшелігімен. Түсін таңдап, суретін бірден көріңіз.",
@@ -30,13 +30,14 @@ window.I18N = {
     colors: { tan: "Күрең", white: "Ақ", black: "Қара", green: "Жасыл", rosegold: "Раушан алтын", pearl: "Інжу", leopard: "Барыс өрнегі", cream: "Кремді",
       other_list: "сұр, ақ, қара, қызыл, сары, бордо, көк" },
     about: {
-      eyebrow: "Шеберхана", title: "15 жылдық қолөнер тәжірибесі",
+      eyebrow: "Шеберхана", title: "10 жылдық қолөнер тәжірибесі",
       p1: "GUMIR.KZ — Алматыдағы кіші шеберхана. Әр мәсі фабрикалық конвейерде емес, шебердің қолымен, дәстүрлі пішу және тігу әдісімен жасалады.",
       p2: "Біз тек табиғи теріні — ешкі және сиыр терісін — қолданамыз, ою-өрнекті қолмен тігеміз. Сондықтан әр жұп — қайталанбас, өзіндік бұйым.",
       f1t: "Қолдан тігу", f1d: "Әр қадам шебердің қолымен бақыланады",
       f2t: "Табиғи материал", f2d: "Тек сертификатталған тері мен жүн",
       f3t: "Ұлттық ою", f3d: "Дәстүрлі қазақ өрнектері қолмен өрнектеледі",
-      f4t: "Жылдам тапсырыс", f4d: "Kaspi Pay және WhatsApp арқылы оңай рәсімдеу"
+      f4t: "Жылдам тапсырыс", f4d: "Kaspi Pay және WhatsApp арқылы оңай рәсімдеу",
+      f5t: "Театр және кәсіби қолданыс", f5d: "Сахналық қойылымдар мен тарихи фильмдерге костюм ретінде, сондай-ақ дәрігер, медбике, шаш таразшы, дүкен сатушысы секілді күні бойы аяқта жүретін мамандарға ыңғайлы жұмыс аяқ киімі ретінде де тапсырыс береді."
     },
     gallery: { eyebrow: "Галерея", title: "Процесс пен өнім суреттері", subtitle: "Шеберхана өмірінен және дайын бұйымдардан үзінділер" },
     reviews: {
@@ -69,20 +70,20 @@ window.I18N = {
 
   ru: {
     dir: "ltr",
-    meta: { title: "GUMYR — Ручная работа, национальные мәси | GUMIR.KZ", desc: "Мастерская в Алматы с 15-летним опытом: национальная казахская обувь мәси ручной работы из натуральной кожи." },
+    meta: { title: "GUMYR — Ручная работа, национальные мәси | GUMIR.KZ", desc: "Мастерская в Алматы с 10-летним опытом: национальная казахская обувь мәси ручной работы из натуральной кожи." },
     nav: { home: "Главная", catalog: "Ассортимент", workshop: "Мастерская", gallery: "Галерея", reviews: "Отзывы", contact: "Контакты", order: "Заказать" },
     lang_name: "Русский",
     hero: {
-      eyebrow: "15 лет мастерства · Алматы",
+      eyebrow: "10 лет мастерства · Алматы",
       title1: "Каждый шаг —", title2: "национальное наследие",
       subtitle: "В мастерской GUMIR.KZ мәси шьются вручную из натуральной кожи с традиционным орнаментом. Для повседневной носки и национальных торжеств.",
       cta1: "Смотреть ассортимент", cta2: "Спросить в WhatsApp",
-      stat1v: "15+", stat1l: "лет опыта",
+      stat1v: "10+", stat1l: "лет опыта",
       stat2v: "4000+", stat2l: "сшитых пар",
       stat3v: "100%", stat3l: "натуральная кожа",
       scroll: "Прокрутите вниз"
     },
-    marquee: ["Натуральная кожа", "Ручная работа", "Национальный орнамент", "Kaspi Pay", "Заказ через WhatsApp", "Доставка по Казахстану", "15 лет опыта"],
+    marquee: ["Натуральная кожа", "Ручная работа", "Национальный орнамент", "Kaspi Pay", "Заказ через WhatsApp", "Доставка по Казахстану", "10 лет опыта"],
     categories: {
       eyebrow: "Ассортимент", title: "Три направления, одно мастерство",
       subtitle: "У каждой категории свой характер. Выберите цвет — и сразу увидите фото.",
@@ -97,13 +98,14 @@ window.I18N = {
     colors: { tan: "Рыжевато-коричневый", white: "Белый", black: "Чёрный", green: "Зелёный", rosegold: "Розовое золото", pearl: "Жемчужный", leopard: "Леопардовый", cream: "Кремовый",
       other_list: "серый, белый, чёрный, красный, жёлтый, бордовый, синий" },
     about: {
-      eyebrow: "Мастерская", title: "15 лет ремесленного опыта",
+      eyebrow: "Мастерская", title: "10 лет ремесленного опыта",
       p1: "GUMIR.KZ — небольшая мастерская в Алматы. Каждая пара мäси создаётся не на конвейере, а руками мастера — по традиционной технологии кроя и шитья.",
       p2: "Мы используем только натуральную кожу — козью и воловью, а орнамент вышивается вручную. Поэтому каждая пара уникальна.",
       f1t: "Ручная работа", f1d: "Каждый этап под контролем мастера",
       f2t: "Натуральные материалы", f2d: "Только сертифицированная кожа и мех",
       f3t: "Национальный орнамент", f3d: "Традиционные казахские узоры вручную",
-      f4t: "Быстрый заказ", f4d: "Оформление через Kaspi Pay и WhatsApp"
+      f4t: "Быстрый заказ", f4d: "Оформление через Kaspi Pay и WhatsApp",
+      f5t: "Театр и профессиональное использование", f5d: "Мäси заказывают не только как национальный костюм — их используют как сценическую обувь для театральных постановок и исторических фильмов, а также как удобную рабочую обувь для врачей, медсестёр, парикмахеров, продавцов и других специалистов, которые весь день проводят на ногах."
     },
     gallery: { eyebrow: "Галерея", title: "Кадры процесса и готовых изделий", subtitle: "Жизнь мастерской и наши работы" },
     reviews: {
@@ -136,20 +138,20 @@ window.I18N = {
 
   uz: {
     dir: "ltr",
-    meta: { title: "GUMYR — Qo'lda tikilgan milliy masi | GUMIR.KZ", desc: "Almatidagi ustaxonada 15 yillik tajriba bilan tabiiy teridan qo'lda tikilgan qozoq milliy poyabzali masi." },
+    meta: { title: "GUMYR — Qo'lda tikilgan milliy masi | GUMIR.KZ", desc: "Almatidagi ustaxonada 10 yillik tajriba bilan tabiiy teridan qo'lda tikilgan qozoq milliy poyabzali masi." },
     nav: { home: "Bosh sahifa", catalog: "Assortiment", workshop: "Ustaxona", gallery: "Galereya", reviews: "Sharhlar", contact: "Aloqa", order: "Buyurtma berish" },
     lang_name: "O'zbekcha",
     hero: {
-      eyebrow: "15 yillik mahorat · Almati",
+      eyebrow: "10 yillik mahorat · Almati",
       title1: "Har bir qadam —", title2: "milliy meros",
       subtitle: "GUMIR.KZ ustaxonasida tabiiy teri va an'anaviy naqshlardan qo'lda tikilgan masi. Kundalik kiyish uchun ham, milliy to'ylar uchun ham.",
       cta1: "Assortimentni ko'rish", cta2: "WhatsApp orqali so'rash",
-      stat1v: "15+", stat1l: "yillik tajriba",
+      stat1v: "10+", stat1l: "yillik tajriba",
       stat2v: "4000+", stat2l: "tikilgan juft",
       stat3v: "100%", stat3l: "tabiiy teri",
       scroll: "Pastga tushing"
     },
-    marquee: ["Tabiiy teri", "Qo'lda tikilgan", "Milliy naqsh", "Kaspi Pay", "WhatsApp orqali buyurtma", "Qozog'iston bo'ylab yetkazib berish", "15 yillik tajriba"],
+    marquee: ["Tabiiy teri", "Qo'lda tikilgan", "Milliy naqsh", "Kaspi Pay", "WhatsApp orqali buyurtma", "Qozog'iston bo'ylab yetkazib berish", "10 yillik tajriba"],
     categories: {
       eyebrow: "Assortiment", title: "Uch yo'nalish, bitta mahorat",
       subtitle: "Har bir toifaning o'z xarakteri bor. Rangni tanlang — va rasmini darhol ko'ring.",
@@ -164,13 +166,14 @@ window.I18N = {
     colors: { tan: "Jigarrang", white: "Oq", black: "Qora", green: "Yashil", rosegold: "Atirgul-oltin", pearl: "Marvarid", leopard: "Leopard naqshi", cream: "Krem rang",
       other_list: "kulrang, oq, qora, qizil, sariq, bordo, ko'k" },
     about: {
-      eyebrow: "Ustaxona", title: "15 yillik hunarmandchilik tajribasi",
+      eyebrow: "Ustaxona", title: "10 yillik hunarmandchilik tajribasi",
       p1: "GUMIR.KZ — Almatidagi kichik ustaxona. Har bir masi konveyerda emas, usta qo'li bilan, an'anaviy kesish va tikish usulida tayyorlanadi.",
       p2: "Biz faqat tabiiy teri — echki va mol terisini ishlatamiz, naqshni qo'lda tikamiz. Shuning uchun har bir juft — betakror buyum.",
       f1t: "Qo'lda tikilgan", f1d: "Har bir bosqich usta nazorati ostida",
       f2t: "Tabiiy material", f2d: "Faqat sertifikatlangan teri va mo'yna",
       f3t: "Milliy naqsh", f3d: "An'anaviy qozoq naqshlari qo'lda tikiladi",
-      f4t: "Tez buyurtma", f4d: "Kaspi Pay va WhatsApp orqali oson rasmiylashtirish"
+      f4t: "Tez buyurtma", f4d: "Kaspi Pay va WhatsApp orqali oson rasmiylashtirish",
+      f5t: "Teatr va professional foydalanish", f5d: "Masi nafaqat milliy kiyim sifatida — teatr tomoshalari va tarixiy filmlar uchun sahna kostyumi sifatida, shuningdek shifokor, hamshira, sartarosh, do'kon sotuvchisi kabi kun bo'yi oyoqda yuradigan mutaxassislar uchun qulay ish poyabzali sifatida ham buyurtma qilinadi."
     },
     gallery: { eyebrow: "Galereya", title: "Jarayon va tayyor mahsulot suratlari", subtitle: "Ustaxona hayotidan lavhalar" },
     reviews: {
@@ -203,20 +206,20 @@ window.I18N = {
 
   ky: {
     dir: "ltr",
-    meta: { title: "GUMYR — Кол менен тигилген улуттук маси | GUMIR.KZ", desc: "Алматыдагы устаканада 15 жылдык тажрыйба менен табигый теринден кол менен тигилген казак улуттук бут кийими маси." },
+    meta: { title: "GUMYR — Кол менен тигилген улуттук маси | GUMIR.KZ", desc: "Алматыдагы устаканада 10 жылдык тажрыйба менен табигый теринден кол менен тигилген казак улуттук бут кийими маси." },
     nav: { home: "Башкы бет", catalog: "Ассортимент", workshop: "Устакана", gallery: "Галерея", reviews: "Пикирлер", contact: "Байланыш", order: "Буйрутма берүү" },
     lang_name: "Кыргызча",
     hero: {
-      eyebrow: "15 жылдык чеберчилик · Алматы",
+      eyebrow: "10 жылдык чеберчилик · Алматы",
       title1: "Ар бир кадам —", title2: "улуттук мурас",
       subtitle: "GUMIR.KZ устаканасында табигый тери жана салттуу оюм-чиймеден кол менен тигилген маси. Күнүмдүк кийүүгө да, улуттук тойго да.",
       cta1: "Ассортиментти көрүү", cta2: "WhatsApp аркылуу сурануу",
-      stat1v: "15+", stat1l: "жылдык тажрыйба",
+      stat1v: "10+", stat1l: "жылдык тажрыйба",
       stat2v: "4000+", stat2l: "тигилген жуп",
       stat3v: "100%", stat3l: "табигый тери",
       scroll: "Төмөн түшүңүз"
     },
-    marquee: ["Табигый тери", "Кол менен тигилген", "Улуттук оюм-чийме", "Kaspi Pay", "WhatsApp аркылуу буйрутма", "Казакстан боюнча жеткирүү", "15 жылдык тажрыйба"],
+    marquee: ["Табигый тери", "Кол менен тигилген", "Улуттук оюм-чийме", "Kaspi Pay", "WhatsApp аркылуу буйрутма", "Казакстан боюнча жеткирүү", "10 жылдык тажрыйба"],
     categories: {
       eyebrow: "Ассортимент", title: "Үч багыт, бир чеберчилик",
       subtitle: "Ар бир категориянын өз мүнөзү бар. Түсүн тандап, сүрөтүн дароо көрүңүз.",
@@ -231,13 +234,14 @@ window.I18N = {
     colors: { tan: "Күрөң", white: "Ак", black: "Кара", green: "Жашыл", rosegold: "Раушан алтын", pearl: "Берметт", leopard: "Барс оюму", cream: "Кремдей",
       other_list: "боз, ак, кара, кызыл, сары, бордо, көк" },
     about: {
-      eyebrow: "Устакана", title: "15 жылдык колонор тажрыйбасы",
+      eyebrow: "Устакана", title: "10 жылдык колонор тажрыйбасы",
       p1: "GUMIR.KZ — Алматыдагы кичине устакана. Ар бир маси конвейерде эмес, чебердин колу менен, салттуу кесүү жана тигүү ыкмасы менен жасалат.",
       p2: "Биз бир гана табигый териден — эчки жана уй терисинен пайдаланабыз, оюм-чиймени кол менен тигебиз. Ошондуктан ар бир жуп — кайталангыс буюм.",
       f1t: "Кол менен тигилген", f1d: "Ар бир этап чебердин көзөмөлүндө",
       f2t: "Табигый материал", f2d: "Жалгыз гана сертификатталган тери жана жүн",
       f3t: "Улуттук оюм", f3d: "Салттуу казак оюмдары кол менен чиймеленет",
-      f4t: "Тез буйрутма", f4d: "Kaspi Pay жана WhatsApp аркылуу оңой тариздөө"
+      f4t: "Тез буйрутма", f4d: "Kaspi Pay жана WhatsApp аркылуу оңой тариздөө",
+      f5t: "Театр жана кесиптик колдонуш", f5d: "Маси жалгыз гана улуттук кийим эмес — театр коюлуштары жана тарыхый тасмалар үчүн сахналык костюм катары, ошондой эле дарыгер, мед бике, чач тарач, дүкөн сатуучусу сыяктуу күнү бою бутта жүргөн адистер үчүн ыңгайлуу жумуш бут кийими катары да тапсырыс берилет."
     },
     gallery: { eyebrow: "Галерея", title: "Процесс жана даяр буюм сүрөттөрү", subtitle: "Устаканын жашоосунан үзүндүлөр" },
     reviews: {
@@ -270,20 +274,20 @@ window.I18N = {
 
   ar: {
     dir: "rtl",
-    meta: { title: "GUMYR — أحذية ماسي القازاقية التقليدية المصنوعة يدويًا | GUMIR.KZ", desc: "ورشة في ألماتي بخبرة 15 عامًا: أحذية ماسي القازاقية التقليدية المصنوعة يدويًا من الجلد الطبيعي." },
+    meta: { title: "GUMYR — أحذية ماسي القازاقية التقليدية المصنوعة يدويًا | GUMIR.KZ", desc: "ورشة في ألماتي بخبرة 10 أعوام: أحذية ماسي القازاقية التقليدية المصنوعة يدويًا من الجلد الطبيعي." },
     nav: { home: "الرئيسية", catalog: "المجموعة", workshop: "الورشة", gallery: "المعرض", reviews: "آراء العملاء", contact: "تواصل معنا", order: "اطلب الآن" },
     lang_name: "العربية",
     hero: {
-      eyebrow: "١٥ عامًا من الحرفية · ألماتي",
+      eyebrow: "١٠ أعوام من الحرفية · ألماتي",
       title1: "كل خطوة —", title2: "إرث وطني",
       subtitle: "في ورشة GUMIR.KZ تُصنع أحذية الماسي يدويًا من الجلد الطبيعي بزخارف تقليدية، للارتداء اليومي والمناسبات الوطنية.",
       cta1: "تصفح المجموعة", cta2: "اسأل عبر واتساب",
-      stat1v: "+١٥", stat1l: "سنة خبرة",
+      stat1v: "+١٠", stat1l: "سنوات خبرة",
       stat2v: "+٤٠٠٠", stat2l: "زوج مصنوع",
       stat3v: "١٠٠٪", stat3l: "جلد طبيعي",
       scroll: "مرر للأسفل"
     },
-    marquee: ["جلد طبيعي", "صناعة يدوية", "زخرفة وطنية", "Kaspi Pay", "الطلب عبر واتساب", "التوصيل داخل كازاخستان", "١٥ عامًا من الخبرة"],
+    marquee: ["جلد طبيعي", "صناعة يدوية", "زخرفة وطنية", "Kaspi Pay", "الطلب عبر واتساب", "التوصيل داخل كازاخستان", "١٠ أعوام من الخبرة"],
     categories: {
       eyebrow: "المجموعة", title: "ثلاثة أنماط، حرفية واحدة",
       subtitle: "لكل فئة طابعها الخاص. اختر اللون وشاهد الصورة فورًا.",
@@ -298,13 +302,14 @@ window.I18N = {
     colors: { tan: "بني فاتح", white: "أبيض", black: "أسود", green: "أخضر", rosegold: "ذهبي وردي", pearl: "لؤلؤي", leopard: "نقشة النمر", cream: "كريمي",
       other_list: "رمادي، أبيض، أسود، أحمر، أصفر، خمري، أزرق" },
     about: {
-      eyebrow: "الورشة", title: "١٥ عامًا من الخبرة الحرفية",
+      eyebrow: "الورشة", title: "١٠ أعوام من الخبرة الحرفية",
       p1: "GUMIR.KZ ورشة صغيرة في ألماتي. كل زوج ماسي لا يُصنع على خط إنتاج، بل بيد الحرفي وبالطريقة التقليدية في القص والخياطة.",
       p2: "نستخدم فقط الجلد الطبيعي — جلد الماعز والبقر، وتُطرَّز الزخارف يدويًا. لذلك كل زوج قطعة فريدة لا تتكرر.",
       f1t: "صناعة يدوية", f1d: "كل مرحلة تحت إشراف الحرفي",
       f2t: "مواد طبيعية", f2d: "جلد وفراء معتمدان فقط",
       f3t: "زخرفة وطنية", f3d: "نقوش قازاقية تقليدية تُطرَّز يدويًا",
-      f4t: "طلب سريع", f4d: "الدفع عبر Kaspi Pay والطلب عبر واتساب"
+      f4t: "طلب سريع", f4d: "الدفع عبر Kaspi Pay والطلب عبر واتساب",
+      f5t: "الاستخدام المسرحي والمهني", f5d: "لا يُطلب الماسي كزي وطني فقط، بل يُستخدم أيضًا كزي مسرحي في العروض المسرحية والأفلام التاريخية، وكحذاء عمل مريح للأطباء والممرضات والحلاقين وبائعي المتاجر وغيرهم ممن يقضون يومهم واقفين."
     },
     gallery: { eyebrow: "المعرض", title: "لقطات من العملية والمنتجات الجاهزة", subtitle: "لمحات من حياة الورشة" },
     reviews: {
@@ -337,20 +342,20 @@ window.I18N = {
 
   tr: {
     dir: "ltr",
-    meta: { title: "GUMYR — El yapımı geleneksel Kazak mesi ayakkabısı | GUMIR.KZ", desc: "Almatı'daki atölyemizde 15 yıllık deneyimle doğal deriden el yapımı geleneksel Kazak mesi ayakkabısı." },
+    meta: { title: "GUMYR — El yapımı geleneksel Kazak mesi ayakkabısı | GUMIR.KZ", desc: "Almatı'daki atölyemizde 10 yıllık deneyimle doğal deriden el yapımı geleneksel Kazak mesi ayakkabısı." },
     nav: { home: "Ana sayfa", catalog: "Ürünler", workshop: "Atölye", gallery: "Galeri", reviews: "Yorumlar", contact: "İletişim", order: "Sipariş ver" },
     lang_name: "Türkçe",
     hero: {
-      eyebrow: "15 yıllık ustalık · Almatı",
+      eyebrow: "10 yıllık ustalık · Almatı",
       title1: "Her adım —", title2: "milli bir miras",
       subtitle: "GUMIR.KZ atölyesinde doğal deri ve geleneksel motiflerle elde dikilen mesi ayakkabıları. Hem günlük giyim hem de milli düğünler için.",
       cta1: "Ürünleri incele", cta2: "WhatsApp'tan sor",
-      stat1v: "15+", stat1l: "yıllık deneyim",
+      stat1v: "10+", stat1l: "yıllık deneyim",
       stat2v: "4000+", stat2l: "dikilen çift",
       stat3v: "%100", stat3l: "doğal deri",
       scroll: "Aşağı kaydırın"
     },
-    marquee: ["Doğal deri", "El yapımı", "Milli motif", "Kaspi Pay", "WhatsApp'tan sipariş", "Kazakistan geneli teslimat", "15 yıllık deneyim"],
+    marquee: ["Doğal deri", "El yapımı", "Milli motif", "Kaspi Pay", "WhatsApp'tan sipariş", "Kazakistan geneli teslimat", "10 yıllık deneyim"],
     categories: {
       eyebrow: "Ürünler", title: "Üç seri, tek ustalık",
       subtitle: "Her kategorinin kendine has bir karakteri var. Rengi seçin, fotoğrafı hemen görün.",
@@ -365,13 +370,14 @@ window.I18N = {
     colors: { tan: "Taba", white: "Beyaz", black: "Siyah", green: "Yeşil", rosegold: "Rose gold", pearl: "İnci", leopard: "Leopar desenli", cream: "Krem",
       other_list: "gri, beyaz, siyah, kırmızı, sarı, bordo, mavi" },
     about: {
-      eyebrow: "Atölye", title: "15 yıllık el sanatı deneyimi",
+      eyebrow: "Atölye", title: "10 yıllık el sanatı deneyimi",
       p1: "GUMIR.KZ, Almatı'da küçük bir atölyedir. Her mesi seri üretim bandında değil, ustanın elinde, geleneksel kesim ve dikiş yöntemiyle yapılır.",
       p2: "Yalnızca doğal deri — keçi ve sığır derisi kullanıyoruz, motifler elle işleniyor. Bu yüzden her çift kendine özgüdür.",
       f1t: "El yapımı", f1d: "Her aşama usta kontrolünde",
       f2t: "Doğal malzeme", f2d: "Sadece sertifikalı deri ve kürk",
       f3t: "Milli motif", f3d: "Geleneksel Kazak desenleri elle işlenir",
-      f4t: "Hızlı sipariş", f4d: "Kaspi Pay ve WhatsApp ile kolay sipariş"
+      f4t: "Hızlı sipariş", f4d: "Kaspi Pay ve WhatsApp ile kolay sipariş",
+      f5t: "Tiyatro ve mesleki kullanım", f5d: "Mesi yalnızca milli kıyafet olarak değil; tiyatro oyunları ve tarihi filmler için sahne kostümü olarak, ayrıca doktor, hemşire, kuaför, mağaza satış görevlisi gibi tüm gün ayakta çalışan meslek sahipleri için rahat bir iş ayakkabısı olarak da sipariş ediliyor."
     },
     gallery: { eyebrow: "Galeri", title: "Üretim süreci ve ürün fotoğrafları", subtitle: "Atölyemizden kareler" },
     reviews: {
@@ -404,20 +410,20 @@ window.I18N = {
 
   zh: {
     dir: "ltr",
-    meta: { title: "GUMYR — 手工制作的哈萨克传统马西皮靴 | GUMIR.KZ", desc: "阿拉木图工坊，15年经验，纯天然皮革手工缝制的哈萨克传统马西皮靴。" },
+    meta: { title: "GUMYR — 手工制作的哈萨克传统马西皮靴 | GUMIR.KZ", desc: "阿拉木图工坊，10年经验，纯天然皮革手工缝制的哈萨克传统马西皮靴。" },
     nav: { home: "首页", catalog: "产品系列", workshop: "工坊", gallery: "画廊", reviews: "客户评价", contact: "联系我们", order: "立即订购" },
     lang_name: "中文",
     hero: {
-      eyebrow: "15年匠心工艺 · 阿拉木图",
+      eyebrow: "10年匠心工艺 · 阿拉木图",
       title1: "每一步 —", title2: "都是民族传承",
       subtitle: "GUMIR.KZ 工坊用天然皮革与传统民族图案纯手工缝制马西皮靴，适合日常穿着，也适合民族庆典场合。",
       cta1: "查看产品系列", cta2: "通过WhatsApp咨询",
-      stat1v: "15+", stat1l: "年经验",
+      stat1v: "10+", stat1l: "年经验",
       stat2v: "4000+", stat2l: "双手工缝制",
       stat3v: "100%", stat3l: "纯天然皮革",
       scroll: "向下滚动"
     },
-    marquee: ["纯天然皮革", "纯手工缝制", "民族图案", "Kaspi Pay 支付", "WhatsApp 下单", "哈萨克斯坦全境配送", "15年经验"],
+    marquee: ["纯天然皮革", "纯手工缝制", "民族图案", "Kaspi Pay 支付", "WhatsApp 下单", "哈萨克斯坦全境配送", "10年经验"],
     categories: {
       eyebrow: "产品系列", title: "三大系列，同一匠心",
       subtitle: "每个系列都有自己的特色。选择颜色，立即查看实拍图。",
@@ -432,13 +438,14 @@ window.I18N = {
     colors: { tan: "棕黄色", white: "白色", black: "黑色", green: "深绿色", rosegold: "玫瑰金色", pearl: "珍珠白", leopard: "豹纹", cream: "奶油色",
       other_list: "灰色、白色、黑色、红色、黄色、酒红色、蓝色" },
     about: {
-      eyebrow: "工坊", title: "15年手工技艺传承",
+      eyebrow: "工坊", title: "10年手工技艺传承",
       p1: "GUMIR.KZ 是阿拉木图的一家小型工坊。每一双马西靴都不是流水线产品，而是由匠人以传统裁剪与缝纫工艺纯手工制作。",
       p2: "我们只使用天然皮革——山羊皮与牛皮，图案均为手工绣制，因此每一双都独一无二。",
       f1t: "纯手工制作", f1d: "每道工序均由匠人亲自把关",
       f2t: "天然材料", f2d: "只选用经认证的皮革与皮毛",
       f3t: "民族图案", f3d: "传统哈萨克纹样纯手工绣制",
-      f4t: "快捷下单", f4d: "支持 Kaspi Pay 与 WhatsApp 便捷下单"
+      f4t: "快捷下单", f4d: "支持 Kaspi Pay 与 WhatsApp 便捷下单",
+      f5t: "戏剧与职业用途", f5d: "马西靴不仅作为民族服饰定制——也被用作戏剧演出和历史题材影视剧的舞台服装道具，还被医生、护士、理发师、店员等需要长时间站立工作的职业人士当作舒适的工作鞋穿着。"
     },
     gallery: { eyebrow: "画廊", title: "制作过程与成品实拍", subtitle: "工坊日常剪影" },
     reviews: {
