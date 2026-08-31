@@ -121,9 +121,15 @@ var CUSTOM_ORDERS = [
     hasPrice: false,
     slides: [
       { type:"video", src:"assets/video/toi-1.mp4" },
+      { type:"image", src:"assets/images/toi/photo-1.jpg" },
       { type:"video", src:"assets/video/toi-2.mp4" },
+      { type:"image", src:"assets/images/toi/photo-2.jpg" },
       { type:"video", src:"assets/video/toi-3.mp4" },
-      { type:"video", src:"assets/video/toi-4.mp4" }
+      { type:"image", src:"assets/images/toi/photo-3.jpg" },
+      { type:"video", src:"assets/video/toi-4.mp4" },
+      { type:"image", src:"assets/images/toi/photo-4.jpg" },
+      { type:"video", src:"assets/video/toi-5.mp4" },
+      { type:"image", src:"assets/images/toi/photo-5.jpg" }
     ]
   },
   {
@@ -220,6 +226,19 @@ function updateWaLinks(lang){
     var el = document.getElementById(id);
     if (el) el.setAttribute("href", link);
   });
+
+  var sizingMsg = {
+    kk: "Сәлеметсіз бе! Аяқ өлшемдерімді жіберемін:",
+    ru: "Здравствуйте! Отправляю мои замеры стопы:",
+    en: "Hello! Here are my foot measurements:",
+    uz: "Assalomu alaykum! Oyoq o'lchovlarimni yuboraman:",
+    ky: "Салам! Бут өлчөмдөрүмдү жөнөтөм:",
+    ar: "مرحبًا! إليكم قياسات قدمي:",
+    tr: "Merhaba! Ayak ölçülerimi gönderiyorum:",
+    zh: "您好！以下是我的脚部测量数据："
+  }[lang] || "";
+  var sizingBtn = document.getElementById("sizingWaBtn");
+  if (sizingBtn) sizingBtn.setAttribute("href", waLink(WA_PHONE, sizingMsg));
 }
 
 /* ---------------- MARQUEE ---------------- */

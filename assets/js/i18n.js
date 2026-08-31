@@ -36,6 +36,15 @@ window.I18N = {
     },
     colors: { tan: "Күрең", white: "Ақ", black: "Қара", green: "Жасыл", rosegold: "Раушан алтын", pearl: "Інжу", leopard: "Барыс өрнегі", cream: "Кремді",
       other_list: "сұр, ақ, қара, қызыл, сары, бордо, көк" },
+    sizing: {
+      eyebrow: "Аяқ өлшемін алу", title: "Аяқ өлшемін дұрыс алу жолы",
+      subtitle: "Мәсіңіз дәл өлшемге сай тігілуі үшін төмендегі нұсқаулықпен өлшемдерді алып, WhatsApp арқылы бізге жіберіңіз.",
+      card1_title: "Балтыр биіктігін өлшеу",
+      card1_text: "Иілгіш метрмен балтырдың жоғарғы жиегінен бастап (0-нүкте) төменге қарай, суретте көрсетілген әр нүктеде (1–11) аяқты айналдыра өлшеп, нәтижелерді нөмірімен бірге жазып алыңыз.",
+      card2_title: "Табан мен аяқ пішінін өлшеу",
+      card2_text: "Аяғыңызды таза парақ бетіне тегіс басып тұрыңыз. Суреттегі белгілер бойынша қонышты, тірсекті, тобықты, өкше-үзеңгі айналымын, үзеңгілік биіктігін, табан жалпақтығы мен бақай ұзындығын өлшеңіз.",
+      cta: "Өлшемдерді WhatsApp-қа жіберу"
+    },
     about: {
       eyebrow: "Шеберхана", title: "10 жылдық қолөнер тәжірибесі",
       p1: "GUMIR.KZ — Алматыдағы кіші шеберхана. Әр мәсі фабрикалық конвейерде емес, шебердің қолымен, дәстүрлі пішу және тігу әдісімен жасалады.",
@@ -111,6 +120,15 @@ window.I18N = {
     },
     colors: { tan: "Рыжевато-коричневый", white: "Белый", black: "Чёрный", green: "Зелёный", rosegold: "Розовое золото", pearl: "Жемчужный", leopard: "Леопардовый", cream: "Кремовый",
       other_list: "серый, белый, чёрный, красный, жёлтый, бордовый, синий" },
+    sizing: {
+      eyebrow: "Снятие мерки", title: "Как правильно снять мерку стопы",
+      subtitle: "Чтобы мäси были сшиты точно по вашему размеру, снимите мерки по инструкции ниже и отправьте их нам в WhatsApp.",
+      card1_title: "Замер высоты голенища",
+      card1_text: "Гибкой сантиметровой лентой измерьте обхват ноги в каждой точке, показанной на рисунке (от 0 до 11), начиная сверху голени, и запишите результат для каждого номера.",
+      card2_title: "Замер формы стопы",
+      card2_text: "Поставьте стопу ровно на чистый лист бумаги. По отмеченным на рисунке точкам измерьте голенище, щиколотку, косточку, обхват пятки и подъёма, высоту подъёма, ширину стопы и длину носка.",
+      cta: "Отправить замеры в WhatsApp"
+    },
     about: {
       eyebrow: "Мастерская", title: "10 лет ремесленного опыта",
       p1: "GUMIR.KZ — небольшая мастерская в Алматы. Каждая пара мäси создаётся не на конвейере, а руками мастера — по традиционной технологии кроя и шитья.",
@@ -186,6 +204,15 @@ window.I18N = {
     },
     colors: { tan: "Tan", white: "White", black: "Black", green: "Green", rosegold: "Rose gold", pearl: "Pearl", leopard: "Leopard print", cream: "Cream",
       other_list: "gray, white, black, red, yellow, burgundy, blue" },
+    sizing: {
+      eyebrow: "Sizing Guide", title: "How to measure your foot correctly",
+      subtitle: "So your mäsi are made to your exact size, take your measurements using the guide below and send them to us on WhatsApp.",
+      card1_title: "Measuring the shaft height",
+      card1_text: "Using a flexible tape, measure the circumference of your leg at each point shown in the diagram (0 to 11), starting from the top of the calf, and write down the result for each number.",
+      card2_title: "Measuring your foot shape",
+      card2_text: "Place your foot flat on a clean sheet of paper. Using the marked points, measure the shaft, ankle bone, heel-to-instep wrap, instep height, ball width, and toe length.",
+      cta: "Send measurements via WhatsApp"
+    },
     about: {
       eyebrow: "Workshop", title: "10 years of craftsmanship",
       p1: "GUMIR.KZ is a small workshop in Almaty. Every pair of mäsi isn't made on an assembly line — it's shaped by hand, using traditional cutting and stitching methods.",
@@ -261,6 +288,15 @@ window.I18N = {
     },
     colors: { tan: "Jigarrang", white: "Oq", black: "Qora", green: "Yashil", rosegold: "Atirgul-oltin", pearl: "Marvarid", leopard: "Leopard naqshi", cream: "Krem rang",
       other_list: "kulrang, oq, qora, qizil, sariq, bordo, ko'k" },
+    sizing: {
+      eyebrow: "O'lchov olish", title: "Oyoq o'lchovini to'g'ri olish",
+      subtitle: "Masi aniq o'lchamingizga mos tikilishi uchun quyidagi qo'llanma bo'yicha o'lchov oling va bizga WhatsApp orqali yuboring.",
+      card1_title: "Boldir balandligini o'lchash",
+      card1_text: "Egiluvchan metr bilan boldirning yuqori chetidan boshlab (0-nuqta), rasmda ko'rsatilgan har bir nuqtada (1–11) oyoqni aylantirib o'lchang va natijalarni raqami bilan yozib oling.",
+      card2_title: "Oyoq va tovon shaklini o'lchash",
+      card2_text: "Oyog'ingizni toza qog'oz betiga tekis bosing. Rasmdagi belgilar bo'yicha boldir, to'piq, to'piq suyagi, tovon-yuz aylanasi, yuz balandligi, tovon eni va barmoq uzunligini o'lchang.",
+      cta: "O'lchovlarni WhatsApp'ga yuborish"
+    },
     about: {
       eyebrow: "Ustaxona", title: "10 yillik hunarmandchilik tajribasi",
       p1: "GUMIR.KZ — Almatidagi kichik ustaxona. Har bir masi konveyerda emas, usta qo'li bilan, an'anaviy kesish va tikish usulida tayyorlanadi.",
@@ -336,6 +372,15 @@ window.I18N = {
     },
     colors: { tan: "Күрөң", white: "Ак", black: "Кара", green: "Жашыл", rosegold: "Раушан алтын", pearl: "Берметт", leopard: "Барс оюму", cream: "Кремдей",
       other_list: "боз, ак, кара, кызыл, сары, бордо, көк" },
+    sizing: {
+      eyebrow: "Өлчөм алуу", title: "Бут өлчөмүн туура алуу жолу",
+      subtitle: "Маси так өлчөмүңүзгө ылайык тигилиши үчүн төмөнкү көрсөтмө боюнча өлчөм алып, бизге WhatsApp аркылуу жөнөтүңүз.",
+      card1_title: "Балтырдын бийиктигин өлчөө",
+      card1_text: "Ийилгич метр менен балтырдын жогорку четинен баштап (0-чекит), сүрөттө көрсөтүлгөн ар бир чекитте (1–11) бутту айландыра өлчөп, натыйжаларды номери менен жазып алыңыз.",
+      card2_title: "Табан менен буттун бөлүгүн өлчөө",
+      card2_text: "Бутуңузду таза кагаз бетине түз коюңуз. Сүрөттөгү белгилер боюнча коныш, шыйрак, ашык сөөгү, өкчө-үзөңгү айланасын, үзөңгү бийиктигин, таман энин жана манжа узундугун өлчөңүз.",
+      cta: "Өлчөмдөрдү WhatsApp'ка жөнөтүү"
+    },
     about: {
       eyebrow: "Устакана", title: "10 жылдык колонор тажрыйбасы",
       p1: "GUMIR.KZ — Алматыдагы кичине устакана. Ар бир маси конвейерде эмес, чебердин колу менен, салттуу кесүү жана тигүү ыкмасы менен жасалат.",
@@ -411,6 +456,15 @@ window.I18N = {
     },
     colors: { tan: "بني فاتح", white: "أبيض", black: "أسود", green: "أخضر", rosegold: "ذهبي وردي", pearl: "لؤلؤي", leopard: "نقشة النمر", cream: "كريمي",
       other_list: "رمادي، أبيض، أسود، أحمر، أصفر، خمري، أزرق" },
+    sizing: {
+      eyebrow: "دليل القياس", title: "كيفية أخذ مقاس قدمك بشكل صحيح",
+      subtitle: "لكي يُصنع الماسي بمقاسك الدقيق، خذ القياسات باتباع الدليل أدناه وأرسلها إلينا عبر واتساب.",
+      card1_title: "قياس ارتفاع الساق",
+      card1_text: "باستخدام شريط قياس مرن، قِس محيط الساق عند كل نقطة موضحة في الرسم (من ٠ إلى ١١) بدءًا من أعلى الساق، ودوّن النتيجة لكل رقم.",
+      card2_title: "قياس شكل القدم",
+      card2_text: "ضع قدمك بشكل مسطح على ورقة نظيفة. حسب النقاط الموضحة، قِس الساق والكاحل وعظمة الكاحل ومحيط الكعب مع مشط القدم، وارتفاع المشط، وعرض القدم، وطول أصابع القدم.",
+      cta: "أرسل القياسات عبر واتساب"
+    },
     about: {
       eyebrow: "الورشة", title: "١٠ أعوام من الخبرة الحرفية",
       p1: "GUMIR.KZ ورشة صغيرة في ألماتي. كل زوج ماسي لا يُصنع على خط إنتاج، بل بيد الحرفي وبالطريقة التقليدية في القص والخياطة.",
@@ -486,6 +540,15 @@ window.I18N = {
     },
     colors: { tan: "Taba", white: "Beyaz", black: "Siyah", green: "Yeşil", rosegold: "Rose gold", pearl: "İnci", leopard: "Leopar desenli", cream: "Krem",
       other_list: "gri, beyaz, siyah, kırmızı, sarı, bordo, mavi" },
+    sizing: {
+      eyebrow: "Ölçü Alma Rehberi", title: "Ayak ölçüsü nasıl doğru alınır",
+      subtitle: "Mesinizin tam ölçünüze göre dikilmesi için aşağıdaki rehbere göre ölçü alın ve bize WhatsApp'tan gönderin.",
+      card1_title: "Konç yüksekliğinin ölçülmesi",
+      card1_text: "Esnek bir mezura ile baldırın üst kenarından başlayarak (0 noktası), şekildeki her noktada (1–11) bacağın çevresini ölçün ve her numaranın sonucunu not edin.",
+      card2_title: "Ayak ve taban şeklinin ölçülmesi",
+      card2_text: "Ayağınızı temiz bir kağıda düz basın. Şekildeki işaretlere göre konç, topuk kemiği, ökçe-üzengi çevresi, üzengi yüksekliği, taban genişliği ve ayak ucu uzunluğunu ölçün.",
+      cta: "Ölçüleri WhatsApp'a gönder"
+    },
     about: {
       eyebrow: "Atölye", title: "10 yıllık el sanatı deneyimi",
       p1: "GUMIR.KZ, Almatı'da küçük bir atölyedir. Her mesi seri üretim bandında değil, ustanın elinde, geleneksel kesim ve dikiş yöntemiyle yapılır.",
@@ -561,6 +624,15 @@ window.I18N = {
     },
     colors: { tan: "棕黄色", white: "白色", black: "黑色", green: "深绿色", rosegold: "玫瑰金色", pearl: "珍珠白", leopard: "豹纹", cream: "奶油色",
       other_list: "灰色、白色、黑色、红色、黄色、酒红色、蓝色" },
+    sizing: {
+      eyebrow: "尺寸测量指南", title: "如何正确测量脚部尺寸",
+      subtitle: "为了让马西靴完全贴合您的尺寸，请按照以下指南测量并通过WhatsApp发送给我们。",
+      card1_title: "测量靴筒高度",
+      card1_text: "用软尺从小腿上端（0点）开始，按图中标注的每个点（1–11）测量腿部周长，并记录每个编号对应的数值。",
+      card2_title: "测量脚型",
+      card2_text: "将脚平放在干净的纸上。按照图中标注，测量靴筒、脚踝、踝骨、脚跟到脚背的围度、脚背高度、脚掌宽度和脚趾长度。",
+      cta: "通过WhatsApp发送测量数据"
+    },
     about: {
       eyebrow: "工坊", title: "10年手工技艺传承",
       p1: "GUMIR.KZ 是阿拉木图的一家小型工坊。每一双马西靴都不是流水线产品，而是由匠人以传统裁剪与缝纫工艺纯手工制作。",

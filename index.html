@@ -252,6 +252,25 @@
   }
   .custom-badge svg{ width:13px; height:13px; }
   .custom-price-note{ font-size:13px; font-style:italic; color:var(--ink-soft); }
+
+  /* ============ SIZE GUIDE ============ */
+  #size-guide{ background:var(--paper-alt); }
+  .sizing-icon{
+    width:64px; height:64px; border-radius:20px; margin-inline:auto 0; margin-bottom:18px;
+    background:linear-gradient(155deg,var(--gold-light),var(--gold-dim)); display:flex; align-items:center; justify-content:center;
+    box-shadow:var(--shadow-2);
+  }
+  .section-head.center .sizing-icon{ margin-inline:auto; }
+  .sizing-icon svg{ width:32px; height:32px; color:#2c1c08; }
+  .sizing-grid{ display:grid; gap:26px; grid-template-columns:1fr; max-width:1000px; margin-inline:auto; }
+  @media(min-width:820px){ .sizing-grid{ grid-template-columns:1fr 1fr; } }
+  .sizing-card{ background:var(--card); border-radius:var(--radius-l); overflow:hidden; box-shadow:var(--shadow-2); border:1px solid rgba(122,67,38,.08); }
+  .sizing-card-img{ background:#fff; padding:22px; display:flex; align-items:center; justify-content:center; min-height:280px; }
+  .sizing-card-img img{ max-height:340px; width:auto; margin-inline:auto; }
+  .sizing-card-body{ padding:22px 26px 28px; }
+  .sizing-card-body h3{ font-size:18.5px; margin-bottom:10px; }
+  .sizing-card-body p{ color:var(--ink-soft); font-size:14.5px; line-height:1.7; }
+  .sizing-cta-wrap{ text-align:center; margin-top:34px; }
   .cat-card{
     background:var(--card); border-radius:var(--radius-l); overflow:hidden; box-shadow:var(--shadow-2);
     border:1px solid rgba(122,67,38,.08); display:flex; flex-direction:column;
@@ -528,6 +547,45 @@
         <p class="section-sub" data-i18n="custom.subtitle"></p>
       </div>
       <div class="cat-grid custom-grid" id="customGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SIZE GUIDE ============ -->
+  <section id="size-guide" class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="sizing-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.5" y="8.5" width="19" height="7" rx="1.6" transform="rotate(-6 12 12)"/>
+            <path d="M5.3 8.9l.5 2.4M9 8.4l.6 2.6M12.8 7.9l.6 2.6M16.5 7.4l.6 2.6" transform="rotate(-6 12 12)"/>
+          </svg>
+        </div>
+        <div class="eyebrow" data-i18n="sizing.eyebrow"></div>
+        <h2 class="section-title" data-i18n="sizing.title"></h2>
+        <p class="section-sub" data-i18n="sizing.subtitle"></p>
+      </div>
+      <div class="sizing-grid reveal">
+        <div class="sizing-card">
+          <div class="sizing-card-img"><img src="assets/images/sizing/leg-diagram.jpg" alt="Balance height measurement diagram" loading="lazy"></div>
+          <div class="sizing-card-body">
+            <h3 data-i18n="sizing.card1_title"></h3>
+            <p data-i18n="sizing.card1_text"></p>
+          </div>
+        </div>
+        <div class="sizing-card">
+          <div class="sizing-card-img"><img src="assets/images/sizing/foot-diagram.jpg" alt="Foot shape measurement diagram" loading="lazy"></div>
+          <div class="sizing-card-body">
+            <h3 data-i18n="sizing.card2_title"></h3>
+            <p data-i18n="sizing.card2_text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="sizing-cta-wrap reveal">
+        <a id="sizingWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-wa">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3z"/></svg>
+          <span data-i18n="sizing.cta"></span>
+        </a>
+      </div>
     </div>
   </section>
 

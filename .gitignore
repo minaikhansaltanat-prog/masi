@@ -2,12 +2,12 @@ node_modules/
 temporary screenshots/
 /logo.png
 /WeChat.jpeg
-Photo/
-Галерея/
-New/
-Toi/
-Jeke/
-Zamer/
+/Photo/
+/Галерея/
+/New/
+/Toi/
+/Jeke/
+/Zamer/
 *.pyc
 __pycache__/
 ava.jfif
