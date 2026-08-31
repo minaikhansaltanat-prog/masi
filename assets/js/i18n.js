@@ -136,6 +136,74 @@ window.I18N = {
     misc: { menu_open: "Меню", menu_close: "Закрыть", language: "Язык", whatsapp_bubble: "Напишите нам!", back_to_top: "Наверх" }
   },
 
+  en: {
+    dir: "ltr",
+    meta: { title: "GUMYR — Handcrafted Traditional Kazakh Mäsi Boots | GUMIR.KZ", desc: "A workshop in Almaty with 10 years of experience, handcrafting traditional Kazakh mäsi footwear from natural leather." },
+    nav: { home: "Home", catalog: "Collection", workshop: "Workshop", gallery: "Gallery", reviews: "Reviews", contact: "Contact", order: "Order Now" },
+    lang_name: "English",
+    hero: {
+      eyebrow: "10 Years of Craftsmanship · Almaty",
+      title1: "Every step —", title2: "a national heritage",
+      subtitle: "At the GUMIR.KZ workshop, mäsi boots are handcrafted from natural leather with traditional embroidery — for everyday wear and national celebrations alike.",
+      cta1: "View Collection", cta2: "Ask on WhatsApp",
+      stat1v: "10+", stat1l: "years of experience",
+      stat2v: "4000+", stat2l: "pairs handcrafted",
+      stat3v: "100%", stat3l: "natural leather",
+      scroll: "Scroll down"
+    },
+    marquee: ["Natural leather", "Handcrafted", "National embroidery", "Kaspi Pay", "Order via WhatsApp", "Delivery across Kazakhstan", "10 years of experience"],
+    categories: {
+      eyebrow: "Collection", title: "Three lines, one craft",
+      subtitle: "Each category has its own character. Pick a color and see the photo instantly.",
+      colors_label: "Choose a color:", from: "from", other_colors: "Other colors available on request:",
+      cta: "Order via WhatsApp", swipe_hint: "Swipe to see more photos"
+    },
+    cat: {
+      goat: { title: "Goat-leather mäsi boots", desc: "Lightweight, handcrafted mäsi made from thin, soft goat leather — perfect for everyday wear or as a gift.", price: "₸12,000 – 15,000" },
+      cow: { title: "Cow-leather mäsi boots", desc: "Durable mäsi made from 1.2–1.6 mm cow leather, available with or without embroidery.", price: "from ₸27,000" },
+      socks: { title: "Black-and-white sock-style mäsi", desc: "Lightweight, snug-fitting sock-style mäsi that sits comfortably on the foot.", price: "₸13,000 – 21,000" }
+    },
+    colors: { tan: "Tan", white: "White", black: "Black", green: "Green", rosegold: "Rose gold", pearl: "Pearl", leopard: "Leopard print", cream: "Cream",
+      other_list: "gray, white, black, red, yellow, burgundy, blue" },
+    about: {
+      eyebrow: "Workshop", title: "10 years of craftsmanship",
+      p1: "GUMIR.KZ is a small workshop in Almaty. Every pair of mäsi isn't made on an assembly line — it's shaped by hand, using traditional cutting and stitching methods.",
+      p2: "We use only natural leather — goat, cow, and sheepskin — and every pattern is embroidered by hand. That's why every pair is one of a kind.",
+      f1t: "Handmade", f1d: "Every step is overseen by the craftsman",
+      f2t: "Natural materials", f2d: "Only certified leather and wool",
+      f3t: "National embroidery", f3d: "Traditional Kazakh patterns stitched by hand",
+      f4t: "Fast ordering", f4d: "Easy checkout via Kaspi Pay and WhatsApp",
+      f5t: "Theatrical & professional use", f5d: "Mäsi is ordered not only as national costume — it's also used as stage footwear for theatrical productions and historical films, and as comfortable everyday work shoes for professions on their feet all day, such as doctors, nurses, hairdressers, and shop staff."
+    },
+    gallery: { eyebrow: "Gallery", title: "Behind the scenes & finished pieces", subtitle: "A look inside the workshop and our finished work" },
+    reviews: {
+      eyebrow: "Reviews", title: "What our customers say",
+      tab_video: "Video", tab_text: "Written", tab_audio: "Audio", tab_2gis: "2GIS",
+      gis_title: "Find our workshop on the 2GIS map and leave a review", gis_desc: "All genuine ratings and photos are on our 2GIS page", gis_cta: "Open in 2GIS",
+      play: "Play", swipe_hint: "Swipe to see more reviews"
+    },
+    testimonials: [
+      { type: "text", name: "Aigerim N.", role: "Almaty", text: "I ordered mine for a betashar ceremony — the quality is outstanding and incredibly comfortable. You can tell right away the embroidery is hand-stitched." },
+      { type: "text", name: "Dauren S.", role: "Astana", text: "I got a pair as a gift for my father. The leather is soft and the stitching is solid. Delivery was fast too." },
+      { type: "text", name: "Madina Q.", role: "Shymkent", text: "I picked my own embroidery for a custom order. The result exceeded my expectations — thank you to the craftsmen!" },
+      { type: "audio", name: "Yerlan T.", role: "Almaty", text: "Voice review: \"The quality of the mäsi is excellent — next time I'll get a set with kebis too.\"" },
+      { type: "audio", name: "Gulnur B.", role: "Karaganda", text: "Voice review: \"I bought these for my child — so comfortable on the foot, thank you!\"" },
+      { type: "video", name: "Nurlan A.", role: "Almaty", text: "Video review: the ordering and pickup process, on camera." },
+      { type: "video", name: "Saya M.", role: "Turkestan", text: "Video review: mäsi worn together with a national outfit at a wedding." }
+    ],
+    gallery_media: { title: "Video & photo gallery", subtitle: "A behind-the-scenes look at our workshop" },
+    contact: {
+      eyebrow: "Contact", title: "Ready to take your order",
+      address_label: "Address", phone_label: "Phone", whatsapp_label: "WhatsApp", email_label: "Email", hours_label: "Working hours",
+      hours_value: "Mon–Fri: 09:00–19:00, Sat: 10:00–16:00",
+      address_value: "Almaty, Kazakhstan",
+      form_title: "Custom order form",
+      form_name: "Your name", form_phone: "Phone number", form_size: "Shoe size", form_color: "Preferred color", form_comment: "Comment / embroidery choice", form_submit: "Send via WhatsApp"
+    },
+    footer: { company: "GUMIR.KZ LLP", bin: "Business ID 221040025667", rights: "All rights reserved", tagline: "Handcrafted national mäsi boots" },
+    misc: { menu_open: "Menu", menu_close: "Close", language: "Language", whatsapp_bubble: "Message us!", back_to_top: "Back to top" }
+  },
+
   uz: {
     dir: "ltr",
     meta: { title: "GUMYR — Qo'lda tikilgan milliy masi | GUMIR.KZ", desc: "Almatidagi ustaxonada 10 yillik tajriba bilan tabiiy teridan qo'lda tikilgan qozoq milliy poyabzali masi." },

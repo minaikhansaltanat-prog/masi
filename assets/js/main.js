@@ -3,10 +3,11 @@
 
 var WA_PHONE = "77089859284";
 var STORAGE_KEY = "gumyr_lang";
-var LANGS = ["kk","ru","uz","ky","ar","tr","zh"];
+var LANGS = ["kk","ru","en","uz","ky","ar","tr","zh"];
 
 var FLAG_SVG = {
   kk: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#00AFCA"/><rect width="3.2" height="20" fill="#FEC50C"/><circle cx="16.5" cy="9.5" r="4" fill="#FEC50C"/><g fill="#FEC50C">$$RAYS$$</g></svg>',
+  en: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#B22234"/><rect y="1.54" width="30" height="1.54" fill="#fff"/><rect y="4.62" width="30" height="1.54" fill="#fff"/><rect y="7.7" width="30" height="1.54" fill="#fff"/><rect y="10.77" width="30" height="1.54" fill="#fff"/><rect y="13.85" width="30" height="1.54" fill="#fff"/><rect y="16.92" width="30" height="1.54" fill="#fff"/><rect width="13" height="10.8" fill="#3C3B6E"/><g fill="#fff"><circle cx="2.4" cy="2" r="0.55"/><circle cx="5.6" cy="2" r="0.55"/><circle cx="8.8" cy="2" r="0.55"/><circle cx="11.2" cy="2" r="0.55"/><circle cx="4" cy="4" r="0.55"/><circle cx="7.2" cy="4" r="0.55"/><circle cx="10.4" cy="4" r="0.55"/><circle cx="2.4" cy="6" r="0.55"/><circle cx="5.6" cy="6" r="0.55"/><circle cx="8.8" cy="6" r="0.55"/><circle cx="11.2" cy="6" r="0.55"/><circle cx="4" cy="8" r="0.55"/><circle cx="7.2" cy="8" r="0.55"/><circle cx="10.4" cy="8" r="0.55"/></g></svg>',
   ru: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#fff"/><rect y="6.66" width="30" height="6.68" fill="#0039A6"/><rect y="13.34" width="30" height="6.66" fill="#D52B1E"/></svg>',
   uz: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#fff"/><rect width="30" height="6.2" fill="#0099B5"/><rect y="6.2" width="30" height="1" fill="#CE1126"/><rect y="12.8" width="30" height="1" fill="#CE1126"/><rect y="13.8" width="30" height="6.2" fill="#1EB53A"/><circle cx="5.2" cy="3.1" r="1.7" fill="#fff"/><circle cx="6.1" cy="2.6" r="1.4" fill="#0099B5"/></svg>',
   ky: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#E8112D"/><circle cx="15" cy="10" r="4.4" fill="#FFEF00"/><circle cx="15" cy="10" r="2.5" fill="#E8112D"/><circle cx="15" cy="10" r="1" fill="#FFEF00"/></svg>',
@@ -166,6 +167,7 @@ function updateWaLinks(lang){
   var greeting = {
     kk: "Сәлеметсіз бе! Мәсі туралы сұрағым бар еді.",
     ru: "Здравствуйте! Хочу узнать про мäси.",
+    en: "Hello! I'd like to ask about your mäsi boots.",
     uz: "Assalomu alaykum! Masi haqida so'ramoqchi edim.",
     ky: "Салам! Маси жөнүндө сурайын деп edim.",
     ar: "مرحبًا! أود الاستفسار عن أحذية الماسي.",
@@ -310,6 +312,7 @@ function renderCategories(lang){
     var msg = {
       kk: "Сәлеметсіз бе! \"" + t(currentLang,"cat."+catKey+".title") + "\" туралы сұрағым бар еді.",
       ru: "Здравствуйте! Хочу узнать про \"" + t(currentLang,"cat."+catKey+".title") + "\".",
+      en: "Hello! I'd like to ask about the \"" + t(currentLang,"cat."+catKey+".title") + "\".",
       uz: "Assalomu alaykum! \"" + t(currentLang,"cat."+catKey+".title") + "\" haqida so'ramoqchi edim.",
       ky: "Салам! \"" + t(currentLang,"cat."+catKey+".title") + "\" жөнүндө сурайын деп edim.",
       ar: "مرحبًا! أود الاستفسار عن \"" + t(currentLang,"cat."+catKey+".title") + "\".",
