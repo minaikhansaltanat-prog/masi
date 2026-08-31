@@ -5,6 +5,26 @@ var WA_PHONE = "77089859284";
 var STORAGE_KEY = "gumyr_lang";
 var LANGS = ["kk","ru","uz","ky","ar","tr","zh"];
 
+var FLAG_SVG = {
+  kk: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#00AFCA"/><rect width="3.2" height="20" fill="#FEC50C"/><circle cx="16.5" cy="9.5" r="4" fill="#FEC50C"/><g fill="#FEC50C">$$RAYS$$</g></svg>',
+  ru: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#fff"/><rect y="6.66" width="30" height="6.68" fill="#0039A6"/><rect y="13.34" width="30" height="6.66" fill="#D52B1E"/></svg>',
+  uz: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#fff"/><rect width="30" height="6.2" fill="#0099B5"/><rect y="6.2" width="30" height="1" fill="#CE1126"/><rect y="12.8" width="30" height="1" fill="#CE1126"/><rect y="13.8" width="30" height="6.2" fill="#1EB53A"/><circle cx="5.2" cy="3.1" r="1.7" fill="#fff"/><circle cx="6.1" cy="2.6" r="1.4" fill="#0099B5"/></svg>',
+  ky: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#E8112D"/><circle cx="15" cy="10" r="4.4" fill="#FFEF00"/><circle cx="15" cy="10" r="2.5" fill="#E8112D"/><circle cx="15" cy="10" r="1" fill="#FFEF00"/></svg>',
+  ar: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#006C35"/><rect x="5" y="9.2" width="17" height="1.6" rx="0.8" fill="#fff"/><rect x="5" y="9.2" width="1.6" height="4.4" rx="0.8" fill="#fff"/></svg>',
+  tr: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#E30A17"/><circle cx="11.8" cy="10" r="4.5" fill="#fff"/><circle cx="13.2" cy="10" r="3.6" fill="#E30A17"/><path d="M17.6 9.9l1.7.4-1.2 1.3.3 1.7-1.5-.8-1.6.7.4-1.7-1.2-1.3 1.8-.2.6-1.6z" fill="#fff"/></svg>',
+  zh: '<svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#DE2910"/><path d="M6.2 4l1 2.7 2.8.1-2.2 1.8.8 2.7-2.4-1.6-2.4 1.6.8-2.7-2.2-1.8 2.8-.1z" fill="#FFDE00"/><circle cx="12.4" cy="2.6" r="0.75" fill="#FFDE00"/><circle cx="13.9" cy="4.9" r="0.75" fill="#FFDE00"/><circle cx="13.6" cy="7.7" r="0.75" fill="#FFDE00"/><circle cx="11.6" cy="9.3" r="0.75" fill="#FFDE00"/></svg>'
+};
+(function(){
+  var rays = "";
+  for (var i=0;i<8;i++){
+    var a = (i * Math.PI * 2) / 8;
+    var x1 = 16.5 + Math.cos(a) * 4.6, y1 = 9.5 + Math.sin(a) * 4.6;
+    var x2 = 16.5 + Math.cos(a) * 6.2, y2 = 9.5 + Math.sin(a) * 6.2;
+    rays += '<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'" stroke="#FEC50C" stroke-width="1.1"/>';
+  }
+  FLAG_SVG.kk = FLAG_SVG.kk.replace("$$RAYS$$", rays);
+})();
+
 function t(lang, path){
   var obj = window.I18N[lang] || window.I18N.kk;
   var parts = path.split(".");
@@ -138,6 +158,8 @@ function applyI18n(lang){
   renderReviews(lang);
   updateWaLinks(lang);
   renderLangSheet(lang);
+  var flagSlot = document.getElementById("langFlag");
+  if (flagSlot) flagSlot.innerHTML = FLAG_SVG[lang] || "";
 }
 
 function updateWaLinks(lang){
