@@ -32,7 +32,7 @@ window.I18N = {
     about: {
       eyebrow: "Шеберхана", title: "10 жылдық қолөнер тәжірибесі",
       p1: "GUMIR.KZ — Алматыдағы кіші шеберхана. Әр мәсі фабрикалық конвейерде емес, шебердің қолымен, дәстүрлі пішу және тігу әдісімен жасалады.",
-      p2: "Біз тек табиғи теріні — ешкі және сиыр терісін — қолданамыз, ою-өрнекті қолмен тігеміз. Сондықтан әр жұп — қайталанбас, өзіндік бұйым.",
+      p2: "Біз тек табиғи теріні — ешкі, сиыр және қой жүн терісін — қолданамыз, ою-өрнекті қолмен тігеміз. Сондықтан әр жұп — қайталанбас, өзіндік бұйым.",
       f1t: "Қолдан тігу", f1d: "Әр қадам шебердің қолымен бақыланады",
       f2t: "Табиғи материал", f2d: "Тек сертификатталған тері мен жүн",
       f3t: "Ұлттық ою", f3d: "Дәстүрлі қазақ өрнектері қолмен өрнектеледі",
@@ -100,7 +100,7 @@ window.I18N = {
     about: {
       eyebrow: "Мастерская", title: "10 лет ремесленного опыта",
       p1: "GUMIR.KZ — небольшая мастерская в Алматы. Каждая пара мäси создаётся не на конвейере, а руками мастера — по традиционной технологии кроя и шитья.",
-      p2: "Мы используем только натуральную кожу — козью и воловью, а орнамент вышивается вручную. Поэтому каждая пара уникальна.",
+      p2: "Мы используем только натуральную кожу — козью, воловью кожу и овчину, а орнамент вышивается вручную. Поэтому каждая пара уникальна.",
       f1t: "Ручная работа", f1d: "Каждый этап под контролем мастера",
       f2t: "Натуральные материалы", f2d: "Только сертифицированная кожа и мех",
       f3t: "Национальный орнамент", f3d: "Традиционные казахские узоры вручную",
@@ -168,7 +168,7 @@ window.I18N = {
     about: {
       eyebrow: "Ustaxona", title: "10 yillik hunarmandchilik tajribasi",
       p1: "GUMIR.KZ — Almatidagi kichik ustaxona. Har bir masi konveyerda emas, usta qo'li bilan, an'anaviy kesish va tikish usulida tayyorlanadi.",
-      p2: "Biz faqat tabiiy teri — echki va mol terisini ishlatamiz, naqshni qo'lda tikamiz. Shuning uchun har bir juft — betakror buyum.",
+      p2: "Biz faqat tabiiy teri — echki, mol va qo'y terisini ishlatamiz, naqshni qo'lda tikamiz. Shuning uchun har bir juft — betakror buyum.",
       f1t: "Qo'lda tikilgan", f1d: "Har bir bosqich usta nazorati ostida",
       f2t: "Tabiiy material", f2d: "Faqat sertifikatlangan teri va mo'yna",
       f3t: "Milliy naqsh", f3d: "An'anaviy qozoq naqshlari qo'lda tikiladi",
@@ -236,7 +236,7 @@ window.I18N = {
     about: {
       eyebrow: "Устакана", title: "10 жылдык колонор тажрыйбасы",
       p1: "GUMIR.KZ — Алматыдагы кичине устакана. Ар бир маси конвейерде эмес, чебердин колу менен, салттуу кесүү жана тигүү ыкмасы менен жасалат.",
-      p2: "Биз бир гана табигый териден — эчки жана уй терисинен пайдаланабыз, оюм-чиймени кол менен тигебиз. Ошондуктан ар бир жуп — кайталангыс буюм.",
+      p2: "Биз бир гана табигый териден — эчки, уй жана кой жүн терисинен пайдаланабыз, оюм-чиймени кол менен тигебиз. Ошондуктан ар бир жуп — кайталангыс буюм.",
       f1t: "Кол менен тигилген", f1d: "Ар бир этап чебердин көзөмөлүндө",
       f2t: "Табигый материал", f2d: "Жалгыз гана сертификатталган тери жана жүн",
       f3t: "Улуттук оюм", f3d: "Салттуу казак оюмдары кол менен чиймеленет",
@@ -304,7 +304,7 @@ window.I18N = {
     about: {
       eyebrow: "الورشة", title: "١٠ أعوام من الخبرة الحرفية",
       p1: "GUMIR.KZ ورشة صغيرة في ألماتي. كل زوج ماسي لا يُصنع على خط إنتاج، بل بيد الحرفي وبالطريقة التقليدية في القص والخياطة.",
-      p2: "نستخدم فقط الجلد الطبيعي — جلد الماعز والبقر، وتُطرَّز الزخارف يدويًا. لذلك كل زوج قطعة فريدة لا تتكرر.",
+      p2: "نستخدم فقط الجلد الطبيعي — جلد الماعز والبقر وجلد الأغنام، وتُطرَّز الزخارف يدويًا. لذلك كل زوج قطعة فريدة لا تتكرر.",
       f1t: "صناعة يدوية", f1d: "كل مرحلة تحت إشراف الحرفي",
       f2t: "مواد طبيعية", f2d: "جلد وفراء معتمدان فقط",
       f3t: "زخرفة وطنية", f3d: "نقوش قازاقية تقليدية تُطرَّز يدويًا",
@@ -372,7 +372,7 @@ window.I18N = {
     about: {
       eyebrow: "Atölye", title: "10 yıllık el sanatı deneyimi",
       p1: "GUMIR.KZ, Almatı'da küçük bir atölyedir. Her mesi seri üretim bandında değil, ustanın elinde, geleneksel kesim ve dikiş yöntemiyle yapılır.",
-      p2: "Yalnızca doğal deri — keçi ve sığır derisi kullanıyoruz, motifler elle işleniyor. Bu yüzden her çift kendine özgüdür.",
+      p2: "Yalnızca doğal deri — keçi, sığır ve koyun derisi kullanıyoruz, motifler elle işleniyor. Bu yüzden her çift kendine özgüdür.",
       f1t: "El yapımı", f1d: "Her aşama usta kontrolünde",
       f2t: "Doğal malzeme", f2d: "Sadece sertifikalı deri ve kürk",
       f3t: "Milli motif", f3d: "Geleneksel Kazak desenleri elle işlenir",
@@ -440,7 +440,7 @@ window.I18N = {
     about: {
       eyebrow: "工坊", title: "10年手工技艺传承",
       p1: "GUMIR.KZ 是阿拉木图的一家小型工坊。每一双马西靴都不是流水线产品，而是由匠人以传统裁剪与缝纫工艺纯手工制作。",
-      p2: "我们只使用天然皮革——山羊皮与牛皮，图案均为手工绣制，因此每一双都独一无二。",
+      p2: "我们只使用天然皮革——山羊皮、牛皮与绵羊皮，图案均为手工绣制，因此每一双都独一无二。",
       f1t: "纯手工制作", f1d: "每道工序均由匠人亲自把关",
       f2t: "天然材料", f2d: "只选用经认证的皮革与皮毛",
       f3t: "民族图案", f3d: "传统哈萨克纹样纯手工绣制",
