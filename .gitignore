@@ -1,0 +1,18 @@
+node_modules/
+temporary screenshots/
+/logo.png
+Photo/
+Галерея/
+*.pyc
+__pycache__/
+ava.jfif
+ava_ref.jpg
+core.py
+design_system.py
+search.py
+plugin.json
+data/
+SKILL d.md
+SKILL.md
+.DS_Store
+Thumbs.db

@@ -1,0 +1,664 @@
+<title>GUMYR — Ұлттық мәсі</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="GUMIR.KZ шеберханасы — қолдан тігілген ұлттық мәсі, 15 жылдық тәжірибе.">
+<link rel="icon" href="assets/images/brand/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ============ TOKENS ============ */
+  :root{
+    --paper:#faf5ea;
+    --paper-alt:#f0e3cd;
+    --card:#fffdf8;
+    --ink:#241811;
+    --ink-soft:#6b5646;
+    --line:#e4d5bb;
+    --leather:#7a4326;
+    --leather-2:#5c3319;
+    --leather-deep:#20130c;
+    --leather-deep-2:#160d08;
+    --gold:#c6952f;
+    --gold-light:#e9c977;
+    --gold-dim:#9c7a3c;
+    --burgundy:#7c2634;
+    --whatsapp:#25d366;
+    --whatsapp-dark:#128c3e;
+    --shadow-1: 0 2px 6px rgba(36,24,17,.10), 0 1px 2px rgba(36,24,17,.08);
+    --shadow-2: 0 14px 34px -12px rgba(58,32,15,.38), 0 4px 12px -4px rgba(58,32,15,.22);
+    --shadow-3: 0 26px 60px -18px rgba(28,16,8,.5), 0 8px 20px -6px rgba(28,16,8,.3);
+    --radius-s: 10px;
+    --radius-m: 18px;
+    --radius-l: 28px;
+    --header-h: 78px;
+    --font-head: 'Playfair Display', 'Noto Serif SC', serif;
+    --font-body: 'Manrope', 'Noto Sans SC', sans-serif;
+    --ease: cubic-bezier(.16,.84,.44,1);
+  }
+  html[lang="ar"]{ --font-head:'Cairo',sans-serif; --font-body:'Cairo',sans-serif; }
+  html[lang="zh"]{ --font-head:'Noto Serif SC',serif; --font-body:'Noto Sans SC',sans-serif; }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  html,body{ max-width:100%; overflow-x:hidden; }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--font-body); font-size:16px; line-height:1.7;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  html[dir="rtl"] body{ direction:rtl; }
+  h1,h2,h3,h4{ font-family:var(--font-head); margin:0; line-height:1.15; letter-spacing:-0.02em; font-weight:600; }
+  p{ margin:0; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  button{ font-family:inherit; cursor:pointer; }
+  ul{ margin:0; padding:0; list-style:none; }
+  .container{ width:100%; max-width:1240px; margin-inline:auto; padding-inline:20px; }
+  @media(min-width:900px){ .container{ padding-inline:40px; } }
+
+  :focus-visible{ outline:2.5px solid var(--gold); outline-offset:3px; border-radius:4px; }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px; font-family:var(--font-body);
+    font-weight:700; font-size:12.5px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--leather); margin-bottom:14px;
+  }
+  .eyebrow::before{ content:""; width:22px; height:2px; background:var(--gold); border-radius:2px; }
+  .section-title{ font-size:clamp(28px,4.4vw,44px); max-width:16ch; }
+  .section-sub{ margin-top:14px; color:var(--ink-soft); max-width:52ch; font-size:16.5px; }
+  .section{ padding-block: clamp(56px,9vw,108px); position:relative; }
+  .section-head{ margin-bottom:clamp(32px,5vw,56px); }
+  .section-head.center{ text-align:center; margin-inline:auto; }
+  .section-head.center .section-sub{ margin-inline:auto; }
+  .section-head.center .eyebrow::before{ display:none; }
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    padding:15px 28px; border-radius:999px; font-weight:700; font-size:15px;
+    border:1.5px solid transparent; transition:transform .35s var(--ease), box-shadow .35s var(--ease), background-color .3s, border-color .3s, color .3s;
+    white-space:nowrap;
+  }
+  .btn:active{ transform:scale(.97); }
+  .btn-primary{ background:linear-gradient(155deg,var(--gold-light),var(--gold) 60%,var(--gold-dim)); color:#2c1c08; box-shadow: 0 10px 24px -8px rgba(198,149,47,.55), 0 2px 6px rgba(198,149,47,.3); }
+  .btn-primary:hover{ box-shadow:0 16px 34px -10px rgba(198,149,47,.65), 0 4px 10px rgba(198,149,47,.35); transform:translateY(-2px); }
+  .btn-ghost{ background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.35); color:#fff; backdrop-filter:blur(6px); }
+  .btn-ghost:hover{ background:rgba(255,255,255,.14); border-color:rgba(255,255,255,.6); transform:translateY(-2px); }
+  .btn-dark{ background:var(--leather-deep); color:#f4e9d8; }
+  .btn-dark:hover{ background:var(--leather-2); transform:translateY(-2px); box-shadow:var(--shadow-2); }
+  .btn-wa{ background:var(--whatsapp); color:#fff; box-shadow:0 10px 22px -8px rgba(37,211,102,.55); }
+  .btn-wa:hover{ background:var(--whatsapp-dark); transform:translateY(-2px); }
+  .btn svg{ width:19px; height:19px; flex:none; }
+
+  /* ============ HEADER ============ */
+  .header-spacer{ height:var(--header-h); }
+  .site-header{
+    position:fixed; inset-inline:0; top:0; z-index:900; height:var(--header-h);
+    display:flex; align-items:center;
+    background:rgba(250,245,234,.82); backdrop-filter:blur(14px) saturate(1.4);
+    border-bottom:1px solid rgba(122,67,38,.14);
+    transition:box-shadow .3s, background-color .3s;
+  }
+  .site-header.is-scrolled{ box-shadow:0 8px 24px -12px rgba(36,24,17,.25); }
+  .header-row{ display:flex; align-items:center; justify-content:space-between; gap:16px; width:100%; }
+  .brand{ display:flex; align-items:center; gap:10px; flex:none; }
+  .brand img{ height:38px; width:auto; }
+  .brand-word{ font-family:var(--font-head); font-weight:700; font-size:19px; letter-spacing:.02em; color:var(--leather-deep); }
+  .brand-word small{ display:block; font-family:var(--font-body); font-weight:600; font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold-dim); }
+
+  .main-nav{ display:none; }
+  @media(min-width:1000px){
+    .main-nav{ display:flex; align-items:center; gap:2px; }
+    .main-nav a{ padding:10px 16px; border-radius:999px; font-weight:600; font-size:14.5px; color:var(--ink-soft); transition:background-color .25s, color .25s; }
+    .main-nav a:hover{ background:rgba(122,67,38,.08); color:var(--leather-deep); }
+  }
+  .header-actions{ display:flex; align-items:center; gap:10px; flex:none; }
+  .header-actions .btn-primary{ display:none; padding:12px 22px; font-size:14px; }
+  @media(min-width:1000px){ .header-actions .btn-primary{ display:inline-flex; } }
+
+  /* language pill */
+  .lang-btn{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px;
+    width:46px; height:46px; border-radius:14px; background:rgba(122,67,38,.08); border:1px solid rgba(122,67,38,.16);
+    color:var(--leather-deep); transition:background-color .25s, transform .25s;
+  }
+  .lang-btn:hover{ background:rgba(122,67,38,.15); }
+  .lang-btn svg.globe{ width:19px; height:19px; }
+  .lang-btn svg.sole{ width:11px; height:11px; opacity:.65; }
+  .lang-code{ display:none; }
+
+  /* hamburger */
+  .burger{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px;
+    width:46px; height:46px; border-radius:14px; background:var(--leather-deep); border:none;
+    transition:background-color .25s;
+  }
+  .burger:hover{ background:var(--leather-2); }
+  .burger span{ width:20px; height:2px; background:#f4e9d8; border-radius:2px; transition:transform .35s var(--ease), opacity .25s, width .25s; }
+  .burger.is-open span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+  .burger.is-open span:nth-child(2){ opacity:0; }
+  .burger.is-open span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+  @media(min-width:1000px){ .burger{ display:none; } }
+
+  /* mobile nav panel */
+  .mobile-nav{
+    position:fixed; inset:0; z-index:950; background:var(--leather-deep);
+    display:flex; flex-direction:column; padding:22px 22px 34px;
+    transform:translateX(100%); transition:transform .45s var(--ease);
+    overflow-y:auto;
+  }
+  html[dir="rtl"] .mobile-nav{ transform:translateX(-100%); }
+  .mobile-nav.is-open{ transform:translateX(0); }
+  .mobile-nav-top{ display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+  .mobile-nav-close{
+    width:46px; height:46px; border-radius:14px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.2);
+    display:flex; align-items:center; justify-content:center; color:#f4e9d8;
+  }
+  .mobile-nav-close svg{ width:20px; height:20px; }
+  .mobile-nav-links{ display:flex; flex-direction:column; margin-top:18px; }
+  .mobile-nav-links a{
+    padding:16px 4px; font-family:var(--font-head); font-size:24px; color:#f4e9d8; border-bottom:1px solid rgba(255,255,255,.1);
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .mobile-nav-links a svg{ width:16px; height:16px; opacity:.5; }
+  .mobile-nav-cta{ margin-top:26px; display:flex; flex-direction:column; gap:12px; }
+  .mobile-nav-foot{ margin-top:auto; padding-top:26px; color:rgba(244,233,216,.55); font-size:13px; }
+
+  /* language sheet */
+  .lang-sheet-backdrop{ position:fixed; inset:0; background:rgba(20,12,7,.55); z-index:960; opacity:0; pointer-events:none; transition:opacity .3s; }
+  .lang-sheet-backdrop.is-open{ opacity:1; pointer-events:auto; }
+  .lang-sheet{
+    position:fixed; z-index:970; left:50%; top:50%; transform:translate(-50%,-46%) scale(.96); opacity:0; pointer-events:none;
+    width:min(360px,90vw); max-height:80vh; overflow-y:auto; background:var(--card); border-radius:var(--radius-m);
+    box-shadow:var(--shadow-3); padding:14px; transition:transform .3s var(--ease), opacity .3s;
+  }
+  .lang-sheet.is-open{ transform:translate(-50%,-50%) scale(1); opacity:1; pointer-events:auto; }
+  .lang-sheet-title{ font-weight:800; font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); padding:10px 12px 6px; }
+  .lang-option{
+    display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%;
+    padding:13px 12px; border-radius:12px; font-weight:600; font-size:15.5px; color:var(--ink); background:none; border:none;
+    transition:background-color .2s;
+  }
+  .lang-option:hover{ background:rgba(122,67,38,.08); }
+  .lang-option.is-active{ background:rgba(198,149,47,.16); color:var(--leather-deep); }
+  .lang-option .native{ font-family:var(--font-head); }
+  .lang-option .check{ width:16px; height:16px; color:var(--gold-dim); opacity:0; }
+  .lang-option.is-active .check{ opacity:1; }
+
+  /* ============ HERO ============ */
+  #hero{ position:relative; background:var(--leather-deep); color:#fff; overflow:hidden; isolation:isolate; }
+  .hero-slides{ position:absolute; inset:0; z-index:0; }
+  .hero-slide{
+    position:absolute; inset:0; opacity:0; transition:opacity 1.8s ease;
+    background-size:cover; background-position:center 30%;
+    animation:kenburns 16s ease-in-out infinite;
+  }
+  .hero-slide.is-active{ opacity:1; z-index:1; }
+  @keyframes kenburns{ 0%{ transform:scale(1.06); } 50%{ transform:scale(1.14); } 100%{ transform:scale(1.06); } }
+  @media (prefers-reduced-motion:reduce){ .hero-slide{ animation:none; } }
+  .hero-scrim{
+    position:absolute; inset:0; z-index:2;
+    background:
+      radial-gradient(120% 90% at 15% 15%, rgba(32,19,12,.35), transparent 55%),
+      linear-gradient(200deg, rgba(20,12,7,.55), rgba(20,12,7,.86) 62%, rgba(20,12,7,.96));
+  }
+  .hero-grain{ position:absolute; inset:0; z-index:3; opacity:.5; mix-blend-mode:overlay; pointer-events:none; }
+  .hero-inner{
+    position:relative; z-index:4; padding-block:calc(var(--header-h) + 48px) 64px;
+    min-height: 100svh; min-height:100vh; display:flex; flex-direction:column; justify-content:center;
+  }
+  .hero-eyebrow{ display:inline-flex; align-items:center; gap:9px; font-weight:700; font-size:12.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold-light); margin-bottom:22px; }
+  .hero-eyebrow::before{ content:""; width:26px; height:2px; background:var(--gold-light); border-radius:2px; }
+  .hero-title{ font-size:clamp(40px,7.4vw,84px); color:#fbf3e4; }
+  .hero-title em{ font-style:italic; color:var(--gold-light); display:block; }
+  .hero-subtitle{ margin-top:26px; max-width:46ch; font-size:clamp(16px,1.7vw,19px); color:rgba(251,243,228,.82); }
+  .hero-ctas{ margin-top:38px; display:flex; flex-wrap:wrap; gap:14px; }
+  .hero-stats{ margin-top:64px; display:flex; flex-wrap:wrap; gap:clamp(28px,5vw,64px); }
+  .hero-stat-value{ font-family:var(--font-head); font-size:clamp(26px,3vw,36px); color:var(--gold-light); }
+  .hero-stat-label{ margin-top:4px; font-size:13px; color:rgba(251,243,228,.68); }
+  .hero-scrolldown{
+    position:absolute; z-index:4; bottom:26px; inset-inline-start:0; width:100%; display:flex; justify-content:center;
+    flex-direction:column; align-items:center; gap:8px; font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:rgba(251,243,228,.6);
+  }
+  .hero-scrolldown .line{ width:1px; height:34px; background:linear-gradient(rgba(251,243,228,.8),transparent); animation:scrolldown 2.2s ease-in-out infinite; }
+  @keyframes scrolldown{ 0%{ transform:scaleY(.3); transform-origin:top; opacity:.4; } 50%{ transform:scaleY(1); opacity:1; } 100%{ transform:scaleY(.3); transform-origin:bottom; opacity:.4; } }
+
+  /* marquee */
+  .marquee-wrap{ background:var(--leather-deep-2); border-block:1px solid rgba(255,255,255,.08); overflow:hidden; position:relative; z-index:5; }
+  .marquee-track{ display:flex; width:max-content; gap:0; animation:marquee 32s linear infinite; }
+  @media (prefers-reduced-motion:reduce){ .marquee-track{ animation-duration:90s; } }
+  .marquee-item{ display:flex; align-items:center; gap:14px; padding:16px 34px; font-family:var(--font-head); font-style:italic; font-size:15px; color:var(--gold-light); white-space:nowrap; }
+  .marquee-item::after{ content:"◆"; color:var(--gold-dim); font-size:9px; margin-inline-start:34px; }
+  @keyframes marquee{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+  html[dir="rtl"] .marquee-track{ animation-name:marquee-rtl; }
+  @keyframes marquee-rtl{ from{ transform:translateX(0); } to{ transform:translateX(50%); } }
+
+  /* ============ CATEGORY CARDS ============ */
+  #categories{ background:var(--paper); }
+  .cat-grid{ display:grid; gap:28px; grid-template-columns:1fr; }
+  @media(min-width:920px){ .cat-grid{ grid-template-columns:repeat(3,1fr); gap:26px; } }
+  .cat-card{
+    background:var(--card); border-radius:var(--radius-l); overflow:hidden; box-shadow:var(--shadow-2);
+    border:1px solid rgba(122,67,38,.08); display:flex; flex-direction:column;
+  }
+  .cat-media{ position:relative; aspect-ratio:4/5; background:#efe4d0; overflow:hidden; touch-action:pan-y; }
+  .cat-slide-track{ display:flex; height:100%; transition:transform .5s var(--ease); }
+  .cat-slide{ flex:none; width:100%; height:100%; position:relative; }
+  .cat-slide img, .cat-slide video{ width:100%; height:100%; object-fit:cover; }
+  .cat-slide .vid-badge{ position:absolute; top:14px; inset-inline-start:14px; background:rgba(20,12,7,.65); color:#fff; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:6px 11px; border-radius:999px; display:flex; align-items:center; gap:6px; }
+  .cat-media::after{ content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(20,12,7,.42), transparent 42%); pointer-events:none; }
+  .cat-arrow{
+    position:absolute; top:50%; translate:0 -50%; z-index:6; width:40px; height:40px; border-radius:50%;
+    background:rgba(255,253,248,.88); box-shadow:var(--shadow-1); display:flex; align-items:center; justify-content:center; color:var(--leather-deep);
+    border:none; transition:background-color .2s, transform .2s;
+  }
+  .cat-arrow:hover{ background:#fff; transform:translateY(-50%) scale(1.06); }
+  .cat-arrow.prev{ inset-inline-start:12px; }
+  .cat-arrow.next{ inset-inline-end:12px; }
+  .cat-arrow svg{ width:17px; height:17px; }
+  html[dir="rtl"] .cat-arrow svg{ transform:scaleX(-1); }
+  .cat-dots{ position:absolute; bottom:14px; inset-inline:0; display:flex; justify-content:center; gap:6px; z-index:6; }
+  .cat-dot{ width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,.5); transition:background-color .25s, width .25s; }
+  .cat-dot.is-active{ background:#fff; width:18px; border-radius:4px; }
+  .cat-body{ padding:24px 24px 26px; display:flex; flex-direction:column; gap:14px; flex:1; }
+  .cat-title{ font-size:20px; }
+  .cat-desc{ color:var(--ink-soft); font-size:14.5px; line-height:1.65; }
+  .cat-price{ font-family:var(--font-head); font-weight:700; font-size:19px; color:var(--leather); }
+  .cat-colors-label{ font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); }
+  .cat-swatches{ display:flex; flex-wrap:wrap; gap:9px; }
+  .swatch{
+    position:relative; width:30px; height:30px; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 1.5px rgba(122,67,38,.25);
+    transition:transform .2s, box-shadow .2s; flex:none;
+    background-size:220% auto; background-position:center 30%; background-repeat:no-repeat; background-color:#eee;
+  }
+  .swatch:hover{ transform:scale(1.1); }
+  .swatch.is-active{ box-shadow:0 0 0 2.5px var(--gold); transform:scale(1.08); }
+  .cat-other-colors{ font-size:12.5px; color:var(--ink-soft); font-style:italic; }
+  .cat-cta{ margin-top:6px; width:100%; }
+
+  /* ============ ABOUT ============ */
+  #about{ background:var(--leather-deep); color:#f4ecdf; position:relative; overflow:hidden; }
+  #about::before{ content:""; position:absolute; inset:0; background:radial-gradient(70% 60% at 85% 10%, rgba(198,149,47,.14), transparent 60%); }
+  .about-grid{ position:relative; display:grid; gap:44px; grid-template-columns:1fr; align-items:start; }
+  @media(min-width:980px){ .about-grid{ grid-template-columns:.85fr 1.15fr; gap:64px; } }
+  .about-copy .eyebrow{ color:var(--gold-light); }
+  .about-copy .eyebrow::before{ background:var(--gold-light); }
+  .about-copy h2{ color:#fbf3e4; font-size:clamp(28px,4vw,42px); }
+  .about-copy p{ margin-top:18px; color:rgba(244,236,223,.78); font-size:16px; max-width:48ch; }
+  .about-features{ display:grid; gap:18px; grid-template-columns:1fr; }
+  @media(min-width:640px){ .about-features{ grid-template-columns:1fr 1fr; } }
+  .about-feature{ background:rgba(255,255,255,.045); border:1px solid rgba(255,255,255,.09); border-radius:var(--radius-m); padding:24px; transition:transform .3s var(--ease), background-color .3s; }
+  .about-feature:hover{ transform:translateY(-4px); background:rgba(255,255,255,.075); }
+  .about-feature .ic{ width:40px; height:40px; border-radius:12px; background:linear-gradient(155deg,var(--gold-light),var(--gold-dim)); display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+  .about-feature .ic svg{ width:20px; height:20px; color:#2c1c08; }
+  .about-feature h4{ color:#fbf3e4; font-size:16.5px; }
+  .about-feature p{ margin-top:8px; font-size:13.8px; color:rgba(244,236,223,.66); }
+
+  /* ============ GALLERY (media carousel) ============ */
+  #gallery-media{ background:var(--paper-alt); }
+  .gcarousel{ position:relative; }
+  .gcarousel-track{ display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding-block:6px 10px; scrollbar-width:none; -webkit-overflow-scrolling:touch; }
+  .gcarousel-track::-webkit-scrollbar{ display:none; }
+  .gcarousel-item{ flex:none; width:min(78vw,320px); scroll-snap-align:start; border-radius:var(--radius-m); overflow:hidden; box-shadow:var(--shadow-2); aspect-ratio:3/4; position:relative; background:#e6d8bf; }
+  .gcarousel-item img, .gcarousel-item video{ width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease); }
+  .gcarousel-item:hover img, .gcarousel-item:hover video{ transform:scale(1.05); }
+  .gcarousel-item .play-badge{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+  .gcarousel-item .play-badge span{ width:52px; height:52px; border-radius:50%; background:rgba(20,12,7,.55); display:flex; align-items:center; justify-content:center; backdrop-filter:blur(3px); }
+  .gcarousel-item .play-badge svg{ width:20px; height:20px; color:#fff; margin-inline-start:2px; }
+  .gcarousel-nav{ display:flex; justify-content:center; gap:12px; margin-top:22px; }
+  .round-arrow{ width:46px; height:46px; border-radius:50%; background:var(--card); border:1px solid rgba(122,67,38,.18); box-shadow:var(--shadow-1); display:flex; align-items:center; justify-content:center; color:var(--leather-deep); transition:background-color .2s, transform .2s; }
+  .round-arrow:hover{ background:#fff; transform:scale(1.06); }
+  .round-arrow svg{ width:18px; height:18px; }
+  html[dir="rtl"] .round-arrow svg{ transform:scaleX(-1); }
+
+  /* ============ REVIEWS ============ */
+  #reviews{ background:var(--paper); }
+  .rtabs{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:32px; }
+  .rtab{ padding:11px 20px; border-radius:999px; font-weight:700; font-size:14px; background:var(--card); border:1.5px solid rgba(122,67,38,.16); color:var(--ink-soft); display:flex; align-items:center; gap:8px; transition:.25s; }
+  .rtab svg{ width:16px; height:16px; }
+  .rtab:hover{ border-color:var(--gold); color:var(--leather-deep); }
+  .rtab.is-active{ background:var(--leather-deep); border-color:var(--leather-deep); color:#f4ecdf; }
+  .rpanels{ position:relative; }
+  .rpanel{ display:none; }
+  .rpanel.is-active{ display:block; }
+  .rcarousel-track{ display:flex; gap:18px; overflow-x:auto; scroll-snap-type:x mandatory; padding-block:4px 12px; scrollbar-width:none; }
+  .rcarousel-track::-webkit-scrollbar{ display:none; }
+  .rcard{ flex:none; width:min(84vw,340px); scroll-snap-align:start; background:var(--card); border-radius:var(--radius-m); padding:26px; box-shadow:var(--shadow-2); border:1px solid rgba(122,67,38,.09); display:flex; flex-direction:column; gap:14px; }
+  .rcard-top{ display:flex; align-items:center; gap:12px; }
+  .ravatar{ width:46px; height:46px; border-radius:50%; background:linear-gradient(155deg,var(--gold-light),var(--leather)); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font-head); font-weight:700; font-size:16px; flex:none; }
+  .rname{ font-weight:700; font-size:15px; }
+  .rrole{ font-size:12.5px; color:var(--ink-soft); }
+  .rstars{ display:flex; gap:2px; color:var(--gold); }
+  .rstars svg{ width:14px; height:14px; }
+  .rtext{ font-size:14.5px; color:var(--ink-soft); line-height:1.65; }
+  .rmedia-badge{ display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:700; color:var(--leather); background:rgba(122,67,38,.08); padding:6px 12px; border-radius:999px; width:fit-content; }
+  .rmedia-badge svg{ width:13px; height:13px; }
+  .gis-card{ background:linear-gradient(155deg,#0f9d4c,#0c7d3c); border-radius:var(--radius-l); padding:clamp(28px,5vw,48px); color:#fff; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; box-shadow:var(--shadow-3); }
+  .gis-left{ max-width:46ch; }
+  .gis-logo{ display:inline-flex; align-items:center; gap:10px; font-family:var(--font-head); font-weight:700; font-size:22px; margin-bottom:14px; }
+  .gis-logo .dot{ width:11px; height:11px; border-radius:50%; background:#fff; }
+  .gis-left h3{ color:#fff; font-size:22px; }
+  .gis-left p{ margin-top:10px; color:rgba(255,255,255,.85); font-size:14.5px; }
+  .gis-cta{ background:#fff; color:#0c7d3c; padding:15px 28px; border-radius:999px; font-weight:800; display:inline-flex; align-items:center; gap:10px; transition:transform .3s; flex:none; }
+  .gis-cta:hover{ transform:translateY(-3px); }
+  .gis-cta svg{ width:18px; height:18px; }
+
+  /* ============ CONTACT / FOOTER ============ */
+  #contact{ background:var(--paper-alt); }
+  .contact-grid{ display:grid; gap:36px; grid-template-columns:1fr; }
+  @media(min-width:980px){ .contact-grid{ grid-template-columns:.9fr 1.1fr; gap:56px; } }
+  .contact-info{ display:flex; flex-direction:column; gap:20px; }
+  .info-row{ display:flex; gap:16px; align-items:flex-start; }
+  .info-ic{ width:44px; height:44px; border-radius:12px; background:var(--card); box-shadow:var(--shadow-1); display:flex; align-items:center; justify-content:center; flex:none; color:var(--leather); }
+  .info-ic svg{ width:20px; height:20px; }
+  .info-label{ font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); }
+  .info-value{ font-weight:600; margin-top:3px; font-size:15.5px; }
+  .info-value a:hover{ color:var(--leather); }
+  .social-row{ display:flex; gap:10px; margin-top:8px; }
+  .social-btn{ width:44px; height:44px; border-radius:12px; background:var(--card); box-shadow:var(--shadow-1); display:flex; align-items:center; justify-content:center; color:var(--leather-deep); transition:transform .25s, background-color .25s; }
+  .social-btn:hover{ transform:translateY(-3px); background:var(--gold-light); }
+  .social-btn svg{ width:19px; height:19px; }
+
+  .order-form{ background:var(--card); border-radius:var(--radius-l); padding:clamp(24px,4vw,40px); box-shadow:var(--shadow-2); }
+  .order-form h3{ font-size:21px; margin-bottom:20px; }
+  .field{ margin-bottom:16px; }
+  .field label{ display:block; font-size:12.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:7px; }
+  .field input, .field select, .field textarea{
+    width:100%; padding:13px 15px; border-radius:12px; border:1.5px solid var(--line); background:var(--paper);
+    font-family:var(--font-body); font-size:15px; color:var(--ink); transition:border-color .25s, box-shadow .25s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--gold); box-shadow:0 0 0 3px rgba(198,149,47,.18); outline:none; }
+  .field-row{ display:grid; gap:14px; grid-template-columns:1fr 1fr; }
+  @media(max-width:480px){ .field-row{ grid-template-columns:1fr; } }
+  .order-form textarea{ resize:vertical; min-height:88px; }
+
+  .site-footer{ background:var(--leather-deep); color:rgba(244,236,223,.7); padding-block:44px 30px; }
+  .footer-row{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:24px; align-items:center; }
+  .footer-brand{ display:flex; align-items:center; gap:10px; }
+  .footer-brand img{ height:30px; filter:brightness(0) invert(1); opacity:.9; }
+  .footer-brand-text{ font-family:var(--font-head); color:#fbf3e4; font-size:16px; }
+  .footer-legal{ font-size:12.5px; line-height:1.8; text-align:end; }
+  .footer-bottom{ margin-top:30px; padding-top:24px; border-top:1px solid rgba(255,255,255,.08); display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; font-size:12.5px; }
+
+  /* ============ WHATSAPP FLOAT ============ */
+  .wa-float{
+    position:fixed; z-index:800; bottom:22px; right:22px; width:62px; height:62px; border-radius:50%;
+    background:var(--whatsapp); color:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 26px -6px rgba(37,211,102,.6);
+  }
+  .wa-float svg{ width:30px; height:30px; position:relative; z-index:2; }
+  .wa-ring{ position:absolute; inset:0; border-radius:50%; border:2px solid var(--whatsapp); animation:wa-pulse 2.6s ease-out infinite; }
+  .wa-ring.gold{ border-color:var(--gold-light); animation-delay:.9s; }
+  @keyframes wa-pulse{ 0%{ transform:scale(1); opacity:.75; } 100%{ transform:scale(1.85); opacity:0; } }
+  @media (prefers-reduced-motion:reduce){ .wa-ring{ animation:none; display:none; } }
+
+  .reveal{ transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.pre{ opacity:0; transform:translateY(24px); }
+
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+</style>
+
+<a class="sr-only" href="#main">Мазмұнға өту</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-row">
+    <a href="#hero" class="brand" aria-label="GUMYR">
+      <img src="assets/images/brand/logo.png" alt="GUMYR logo" width="120" height="40">
+    </a>
+    <nav class="main-nav" aria-label="Негізгі мәзір">
+      <a href="#hero" data-i18n="nav.home"></a>
+      <a href="#categories" data-i18n="nav.catalog"></a>
+      <a href="#about" data-i18n="nav.workshop"></a>
+      <a href="#gallery-media" data-i18n="nav.gallery"></a>
+      <a href="#reviews" data-i18n="nav.reviews"></a>
+      <a href="#contact" data-i18n="nav.contact"></a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary" href="#contact" data-i18n="nav.order"></a>
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9s1.3-6.4 3.8-9z"/></svg>
+        <svg class="sole" viewBox="0 0 24 40" fill="currentColor"><path d="M12 0c4 0 7 5 7 12 0 5-1.5 8-1.5 13 0 6-2.5 15-5.5 15s-5.5-9-5.5-15c0-5-1.5-8-1.5-13C5 5 8 0 12 0z"/></svg>
+      </button>
+      <button class="burger" id="burgerBtn" aria-label="Мәзір" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="header-spacer"></div>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Мобильді мәзір">
+  <div class="mobile-nav-top">
+    <a href="#hero" class="brand">
+      <img src="assets/images/brand/logo.png" alt="GUMYR" style="height:32px;filter:brightness(0) invert(1)">
+    </a>
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Жабу">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav-links">
+    <a href="#hero" data-i18n="nav.home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="#categories" data-i18n="nav.catalog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="#about" data-i18n="nav.workshop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="#gallery-media" data-i18n="nav.gallery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="#reviews" data-i18n="nav.reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="#contact" data-i18n="nav.contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="#contact" class="btn btn-primary" data-i18n="nav.order"></a>
+    <a id="mobileNavWa" href="#" target="_blank" rel="noopener" class="btn btn-wa">
+      <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3zm0 21.7c-1.98 0-3.85-.55-5.44-1.5l-.39-.23-4.24.94.9-4.1-.25-.42A9.6 9.6 0 0 1 5.4 15c0-5.86 4.77-10.62 10.62-10.62S26.64 9.14 26.64 15 21.87 24.7 16.02 24.7zm5.85-7.94c-.32-.16-1.9-.94-2.2-1.05-.3-.1-.5-.16-.72.16-.21.32-.83 1.04-1.02 1.26-.19.21-.37.24-.69.08-.32-.16-1.34-.5-2.55-1.58-.94-.84-1.58-1.87-1.76-2.19-.19-.32-.02-.5.14-.65.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.67 0 1.57 1.15 3.09 1.31 3.3.16.21 2.26 3.45 5.47 4.84.76.33 1.36.52 1.82.67.77.24 1.46.21 2.02.13.62-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+      <span data-i18n="misc.whatsapp_bubble"></span>
+    </a>
+  </div>
+  <div class="mobile-nav-foot" data-i18n="footer.tagline"></div>
+</nav>
+
+<div class="lang-sheet-backdrop" id="langBackdrop"></div>
+<div class="lang-sheet" id="langSheet" role="menu">
+  <div class="lang-sheet-title" data-i18n="misc.language"></div>
+  <div id="langOptions"></div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="hero">
+    <div class="hero-slides" id="heroSlides"></div>
+    <div class="hero-scrim"></div>
+    <svg class="hero-grain" width="100%" height="100%">
+      <filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+      <rect width="100%" height="100%" filter="url(#noiseFilter)" opacity="0.06"/>
+    </svg>
+    <div class="container hero-inner">
+      <div class="hero-eyebrow" data-i18n="hero.eyebrow"></div>
+      <h1 class="hero-title"><span data-i18n="hero.title1"></span><em data-i18n="hero.title2"></em></h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+      <div class="hero-ctas">
+        <a href="#categories" class="btn btn-primary" data-i18n="hero.cta1"></a>
+        <a id="heroWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="hero.cta2"></a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-value" data-i18n="hero.stat1v"></div><div class="hero-stat-label" data-i18n="hero.stat1l"></div></div>
+        <div><div class="hero-stat-value" data-i18n="hero.stat2v"></div><div class="hero-stat-label" data-i18n="hero.stat2l"></div></div>
+        <div><div class="hero-stat-value" data-i18n="hero.stat3v"></div><div class="hero-stat-label" data-i18n="hero.stat3l"></div></div>
+      </div>
+    </div>
+    <div class="hero-scrolldown"><span data-i18n="hero.scroll"></span><span class="line"></span></div>
+  </section>
+
+  <div class="marquee-wrap"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section id="categories" class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="eyebrow" data-i18n="categories.eyebrow"></div>
+        <h2 class="section-title" data-i18n="categories.title"></h2>
+        <p class="section-sub" data-i18n="categories.subtitle"></p>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <div class="eyebrow" data-i18n="about.eyebrow"></div>
+        <h2 data-i18n="about.title"></h2>
+        <p data-i18n="about.p1"></p>
+        <p data-i18n="about.p2"></p>
+      </div>
+      <div class="about-features reveal">
+        <div class="about-feature">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6-5.5-3-5.5 3 1-6L3 8.9 9 8z"/></svg></div>
+          <h4 data-i18n="about.f1t"></h4><p data-i18n="about.f1d"></p>
+        </div>
+        <div class="about-feature">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9C.5 8 3 3.5 7 3.5c2 0 3.8 1.2 5 3 1.2-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+          <h4 data-i18n="about.f2t"></h4><p data-i18n="about.f2d"></p>
+        </div>
+        <div class="about-feature">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12c2-4 6-6 8-6s6 2 8 6c-2 4-6 6-8 6s-6-2-8-6z"/><circle cx="12" cy="12" r="2.4"/></svg></div>
+          <h4 data-i18n="about.f3t"></h4><p data-i18n="about.f3d"></p>
+        </div>
+        <div class="about-feature">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+          <h4 data-i18n="about.f4t"></h4><p data-i18n="about.f4d"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY MEDIA ============ -->
+  <section id="gallery-media" class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="eyebrow" data-i18n="gallery_media.title"></div>
+        <h2 class="section-title" data-i18n="gallery.title"></h2>
+        <p class="section-sub" data-i18n="gallery.subtitle"></p>
+      </div>
+      <div class="gcarousel reveal">
+        <div class="gcarousel-track" id="gTrack"></div>
+        <div class="gcarousel-nav">
+          <button class="round-arrow" id="gPrev" aria-label="prev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button class="round-arrow" id="gNext" aria-label="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="eyebrow" data-i18n="reviews.eyebrow"></div>
+        <h2 class="section-title" data-i18n="reviews.title"></h2>
+      </div>
+      <div class="rtabs reveal" id="rtabs" role="tablist"></div>
+      <div class="rpanels reveal">
+        <div class="rpanel" data-type="video"><div class="rcarousel-track" data-track="video"></div></div>
+        <div class="rpanel" data-type="text"><div class="rcarousel-track" data-track="text"></div></div>
+        <div class="rpanel" data-type="audio"><div class="rcarousel-track" data-track="audio"></div></div>
+        <div class="rpanel" data-type="2gis">
+          <div class="gis-card">
+            <div class="gis-left">
+              <div class="gis-logo"><span class="dot"></span> 2GIS</div>
+              <h3 data-i18n="reviews.gis_title"></h3>
+              <p data-i18n="reviews.gis_desc"></p>
+            </div>
+            <a class="gis-cta" id="gisLink" href="https://2gis.kz/almaty/search/GUMIR.KZ" target="_blank" rel="noopener">
+              <span data-i18n="reviews.gis_cta"></span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="contact.eyebrow"></div>
+        <h2 class="section-title" data-i18n="contact.title"></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="info-row">
+            <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div><div class="info-label" data-i18n="contact.address_label"></div><div class="info-value" data-i18n="contact.address_value"></div></div>
+          </div>
+          <div class="info-row">
+            <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div><div class="info-label" data-i18n="contact.phone_label"></div><div class="info-value"><a href="tel:+77089859284">+7 708 985 9284</a></div></div>
+          </div>
+          <div class="info-row">
+            <div class="info-ic"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3z"/></svg></div>
+            <div><div class="info-label" data-i18n="contact.whatsapp_label"></div><div class="info-value"><a id="contactWa" href="#" target="_blank" rel="noopener">+7 708 985 9284</a></div></div>
+          </div>
+          <div class="info-row">
+            <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+            <div><div class="info-label" data-i18n="contact.email_label"></div><div class="info-value"><a href="mailto:erlanbeisen8@gmail.com">erlanbeisen8@gmail.com</a></div></div>
+          </div>
+          <div class="info-row">
+            <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+            <div><div class="info-label" data-i18n="contact.hours_label"></div><div class="info-value" data-i18n="contact.hours_value"></div></div>
+          </div>
+          <div class="social-row">
+            <a class="social-btn" href="https://instagram.com/gumir.kz" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+            </a>
+            <a class="social-btn" id="socialWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <form class="order-form reveal" id="orderForm">
+          <h3 data-i18n="contact.form_title"></h3>
+          <div class="field-row">
+            <div class="field"><label data-i18n="contact.form_name"></label><input type="text" id="fName" required></div>
+            <div class="field"><label data-i18n="contact.form_phone"></label><input type="tel" id="fPhone" required></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label data-i18n="contact.form_size"></label><input type="text" id="fSize" placeholder="38"></div>
+            <div class="field"><label data-i18n="contact.form_color"></label><input type="text" id="fColor"></div>
+          </div>
+          <div class="field"><label data-i18n="contact.form_comment"></label><textarea id="fComment"></textarea></div>
+          <button type="submit" class="btn btn-wa" style="width:100%">
+            <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3z"/></svg>
+            <span data-i18n="contact.form_submit"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="footer-brand">
+        <img src="assets/images/brand/logo.png" alt="GUMYR">
+      </div>
+      <div class="footer-legal">
+        <div data-i18n="footer.company"></div>
+        <div data-i18n="footer.bin"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div data-i18n="footer.tagline"></div>
+      <div>© <span id="yearNow"></span> GUMYR · <span data-i18n="footer.rights"></span></div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <span class="wa-ring"></span><span class="wa-ring gold"></span>
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3zm0 21.7c-1.98 0-3.85-.55-5.44-1.5l-.39-.23-4.24.94.9-4.1-.25-.42A9.6 9.6 0 0 1 5.4 15c0-5.86 4.77-10.62 10.62-10.62S26.64 9.14 26.64 15 21.87 24.7 16.02 24.7zm5.85-7.94c-.32-.16-1.9-.94-2.2-1.05-.3-.1-.5-.16-.72.16-.21.32-.83 1.04-1.02 1.26-.19.21-.37.24-.69.08-.32-.16-1.34-.5-2.55-1.58-.94-.84-1.58-1.87-1.76-2.19-.19-.32-.02-.5.14-.65.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.67 0 1.57 1.15 3.09 1.31 3.3.16.21 2.26 3.45 5.47 4.84.76.33 1.36.52 1.82.67.77.24 1.46.21 2.02.13.62-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+</a>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
