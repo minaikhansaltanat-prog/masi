@@ -377,6 +377,16 @@
   .gis-cta:hover{ transform:translateY(-3px); }
   .gis-cta svg{ width:18px; height:18px; }
 
+  .yt-card{ background:linear-gradient(155deg,#ff2c2c,#c60000); border-radius:var(--radius-l); padding:clamp(26px,4.5vw,42px); color:#fff; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:22px; box-shadow:0 20px 44px -16px rgba(198,0,0,.45); }
+  .yt-left{ display:flex; align-items:center; gap:18px; max-width:52ch; }
+  .yt-icon{ width:52px; height:52px; border-radius:14px; background:rgba(255,255,255,.18); display:flex; align-items:center; justify-content:center; flex:none; }
+  .yt-icon svg{ width:26px; height:26px; color:#fff; }
+  .yt-left h3{ color:#fff; font-size:19px; }
+  .yt-left p{ margin-top:6px; color:rgba(255,255,255,.88); font-size:14px; }
+  .yt-cta{ background:#fff; color:#c60000; padding:14px 26px; border-radius:999px; font-weight:800; display:inline-flex; align-items:center; gap:9px; transition:transform .3s; flex:none; }
+  .yt-cta:hover{ transform:translateY(-3px); }
+  .yt-cta svg{ width:17px; height:17px; }
+
   /* ============ CONTACT / FOOTER ============ */
   #contact{ background:var(--paper-alt); }
   .contact-grid{ display:grid; gap:36px; grid-template-columns:1fr; }
@@ -579,6 +589,19 @@
             <p data-i18n="sizing.card2_text"></p>
           </div>
         </div>
+      </div>
+      <div class="yt-card reveal" style="margin-top:26px;">
+        <div class="yt-left">
+          <div class="yt-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          <div>
+            <h3 data-i18n="sizing.video_title"></h3>
+            <p data-i18n="sizing.video_desc"></p>
+          </div>
+        </div>
+        <a class="yt-cta" href="https://www.youtube.com/@gumirkz" target="_blank" rel="noopener">
+          <span data-i18n="sizing.video_cta"></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+        </a>
       </div>
       <div class="sizing-cta-wrap reveal">
         <a id="sizingWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-wa">

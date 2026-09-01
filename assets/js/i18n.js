@@ -43,6 +43,7 @@ window.I18N = {
       card1_text: "Иілгіш метрмен балтырдың жоғарғы жиегінен бастап (0-нүкте) төменге қарай, суретте көрсетілген әр нүктеде (1–11) аяқты айналдыра өлшеп, нәтижелерді нөмірімен бірге жазып алыңыз.",
       card2_title: "Табан мен аяқ пішінін өлшеу",
       card2_text: "Аяғыңызды таза парақ бетіне тегіс басып тұрыңыз. Суреттегі белгілер бойынша қонышты, тірсекті, тобықты, өкше-үзеңгі айналымын, үзеңгілік биіктігін, табан жалпақтығы мен бақай ұзындығын өлшеңіз.",
+      video_title: "Бейне-нұсқаулықты көріңіз", video_desc: "Аяқ өлшемін дұрыс алу жолын YouTube арнамыздан бейнеден көре аласыз.", video_cta: "YouTube-та көру",
       cta: "Өлшемдерді WhatsApp-қа жіберу"
     },
     about: {
@@ -127,6 +128,7 @@ window.I18N = {
       card1_text: "Гибкой сантиметровой лентой измерьте обхват ноги в каждой точке, показанной на рисунке (от 0 до 11), начиная сверху голени, и запишите результат для каждого номера.",
       card2_title: "Замер формы стопы",
       card2_text: "Поставьте стопу ровно на чистый лист бумаги. По отмеченным на рисунке точкам измерьте голенище, щиколотку, косточку, обхват пятки и подъёма, высоту подъёма, ширину стопы и длину носка.",
+      video_title: "Смотрите видео-инструкцию", video_desc: "Как правильно снять мерку стопы — смотрите видео на нашем YouTube-канале.", video_cta: "Смотреть на YouTube",
       cta: "Отправить замеры в WhatsApp"
     },
     about: {
@@ -211,6 +213,7 @@ window.I18N = {
       card1_text: "Using a flexible tape, measure the circumference of your leg at each point shown in the diagram (0 to 11), starting from the top of the calf, and write down the result for each number.",
       card2_title: "Measuring your foot shape",
       card2_text: "Place your foot flat on a clean sheet of paper. Using the marked points, measure the shaft, ankle bone, heel-to-instep wrap, instep height, ball width, and toe length.",
+      video_title: "Watch the video guide", video_desc: "See exactly how to measure your foot correctly in the video on our YouTube channel.", video_cta: "Watch on YouTube",
       cta: "Send measurements via WhatsApp"
     },
     about: {
@@ -295,6 +298,7 @@ window.I18N = {
       card1_text: "Egiluvchan metr bilan boldirning yuqori chetidan boshlab (0-nuqta), rasmda ko'rsatilgan har bir nuqtada (1–11) oyoqni aylantirib o'lchang va natijalarni raqami bilan yozib oling.",
       card2_title: "Oyoq va tovon shaklini o'lchash",
       card2_text: "Oyog'ingizni toza qog'oz betiga tekis bosing. Rasmdagi belgilar bo'yicha boldir, to'piq, to'piq suyagi, tovon-yuz aylanasi, yuz balandligi, tovon eni va barmoq uzunligini o'lchang.",
+      video_title: "Video qo'llanmani tomosha qiling", video_desc: "Oyoq o'lchovini to'g'ri olish yo'lini YouTube kanalimizdagi videodan ko'rishingiz mumkin.", video_cta: "YouTube'da ko'rish",
       cta: "O'lchovlarni WhatsApp'ga yuborish"
     },
     about: {
@@ -379,6 +383,7 @@ window.I18N = {
       card1_text: "Ийилгич метр менен балтырдын жогорку четинен баштап (0-чекит), сүрөттө көрсөтүлгөн ар бир чекитте (1–11) бутту айландыра өлчөп, натыйжаларды номери менен жазып алыңыз.",
       card2_title: "Табан менен буттун бөлүгүн өлчөө",
       card2_text: "Бутуңузду таза кагаз бетине түз коюңуз. Сүрөттөгү белгилер боюнча коныш, шыйрак, ашык сөөгү, өкчө-үзөңгү айланасын, үзөңгү бийиктигин, таман энин жана манжа узундугун өлчөңүз.",
+      video_title: "Видео нускаманы көрүңүз", video_desc: "Бут өлчөмүн туура алуу жолун YouTube каналыбыздан видеодон көрө аласыз.", video_cta: "YouTube'да көрүү",
       cta: "Өлчөмдөрдү WhatsApp'ка жөнөтүү"
     },
     about: {
@@ -463,6 +468,7 @@ window.I18N = {
       card1_text: "باستخدام شريط قياس مرن، قِس محيط الساق عند كل نقطة موضحة في الرسم (من ٠ إلى ١١) بدءًا من أعلى الساق، ودوّن النتيجة لكل رقم.",
       card2_title: "قياس شكل القدم",
       card2_text: "ضع قدمك بشكل مسطح على ورقة نظيفة. حسب النقاط الموضحة، قِس الساق والكاحل وعظمة الكاحل ومحيط الكعب مع مشط القدم، وارتفاع المشط، وعرض القدم، وطول أصابع القدم.",
+      video_title: "شاهد الدليل المرئي", video_desc: "شاهد كيفية أخذ مقاس القدم بشكل صحيح في الفيديو على قناتنا على يوتيوب.", video_cta: "المشاهدة على يوتيوب",
       cta: "أرسل القياسات عبر واتساب"
     },
     about: {
@@ -547,6 +553,7 @@ window.I18N = {
       card1_text: "Esnek bir mezura ile baldırın üst kenarından başlayarak (0 noktası), şekildeki her noktada (1–11) bacağın çevresini ölçün ve her numaranın sonucunu not edin.",
       card2_title: "Ayak ve taban şeklinin ölçülmesi",
       card2_text: "Ayağınızı temiz bir kağıda düz basın. Şekildeki işaretlere göre konç, topuk kemiği, ökçe-üzengi çevresi, üzengi yüksekliği, taban genişliği ve ayak ucu uzunluğunu ölçün.",
+      video_title: "Video rehberi izleyin", video_desc: "Ayak ölçüsünün nasıl doğru alınacağını YouTube kanalımızdaki videoda izleyebilirsiniz.", video_cta: "YouTube'da izle",
       cta: "Ölçüleri WhatsApp'a gönder"
     },
     about: {
@@ -631,6 +638,7 @@ window.I18N = {
       card1_text: "用软尺从小腿上端（0点）开始，按图中标注的每个点（1–11）测量腿部周长，并记录每个编号对应的数值。",
       card2_title: "测量脚型",
       card2_text: "将脚平放在干净的纸上。按照图中标注，测量靴筒、脚踝、踝骨、脚跟到脚背的围度、脚背高度、脚掌宽度和脚趾长度。",
+      video_title: "观看视频指南", video_desc: "在我们的YouTube频道观看如何正确测量脚部尺寸的视频。", video_cta: "在YouTube观看",
       cta: "通过WhatsApp发送测量数据"
     },
     about: {
