@@ -291,7 +291,10 @@ function createCarousel(root, opts){
 
   var startX = 0, deltaX = 0, dragging = false;
   var media = root.querySelector(".cat-media");
-  media.addEventListener("pointerdown", function(e){ dragging = true; startX = e.clientX; media.setPointerCapture(e.pointerId); });
+  media.addEventListener("pointerdown", function(e){
+    if (e.target.closest(".cat-arrow, .cat-dots")) return; // let buttons handle their own click
+    dragging = true; startX = e.clientX; media.setPointerCapture(e.pointerId);
+  });
   media.addEventListener("pointermove", function(e){ if(!dragging) return; deltaX = e.clientX - startX; });
   media.addEventListener("pointerup", function(){
     if (!dragging) return; dragging = false;

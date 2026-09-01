@@ -31,7 +31,7 @@ window.I18N = {
       eyebrow: "Жеке тапсырыс", title: "Жеке арнайы тапсырыс беру",
       subtitle: "Ерекше сәтке арналған бірегей мәсі — тек сізге, тек сіздің талғамыңызға сай тігіледі.",
       price_note: "Баға — тапсырыс бойынша",
-      toi: { title: "Түнгі той, тұсау кесер және сахналық би", desc: "Ерекше кештің қаһарманына айналыңыз! Түнгі тойға, тұсау кесерге немесе сахналық биге арналған салтанатты мәсі назарды өзіне аударады." },
+      toi: { title: "Сүндет той, тұсау кесер және сахналық би", desc: "Ерекше мерекенің қаһарманына айналыңыз! Сүндет тойға, тұсау кесерге немесе сахналық биге арналған салтанатты мәсі назарды өзіне аударады." },
       jeke: { title: "Ересектердің жеке тапсырысы", desc: "Өз қиялыңыздағы мәсіні шындыққа айналдырыңыз — түсінен ою-өрнегіне дейін толығымен сіздің қалауыңызға және жеке өлшеміңізге сай қолмен тігіледі.", price: "150 000 ₸-ге дейін" }
     },
     colors: { tan: "Күрең", white: "Ақ", black: "Қара", green: "Жасыл", rosegold: "Раушан алтын", pearl: "Інжу", leopard: "Барыс өрнегі", cream: "Кремді",
@@ -115,7 +115,7 @@ window.I18N = {
       eyebrow: "Индивидуальный заказ", title: "Индивидуальный особый заказ",
       subtitle: "Уникальные мäси для особого момента — шьются только для вас и по вашему вкусу.",
       price_note: "Цена — по договорённости",
-      toi: { title: "Вечерний той, тусау кесер и сценический танец", desc: "Станьте главным героем особого вечера! Торжественные мäси для вечернего тоя, тусау кесер или сценического танца притягивают все взгляды." },
+      toi: { title: "Сюндет той (обряд обрезания), тусау кесер и сценический танец", desc: "Станьте главным героем особого праздника! Торжественные мäси для сюндет тоя, тусау кесер или сценического танца притягивают все взгляды." },
       jeke: { title: "Индивидуальный заказ для взрослых", desc: "Воплотите мäси своей мечты — от цвета до орнамента всё шьётся вручную по вашему желанию и точно по вашему размеру.", price: "до 150 000 ₸" }
     },
     colors: { tan: "Рыжевато-коричневый", white: "Белый", black: "Чёрный", green: "Зелёный", rosegold: "Розовое золото", pearl: "Жемчужный", leopard: "Леопардовый", cream: "Кремовый",
@@ -199,7 +199,7 @@ window.I18N = {
       eyebrow: "Custom Orders", title: "Personal Custom Orders",
       subtitle: "One-of-a-kind mäsi for your special moment — made only for you, exactly to your taste.",
       price_note: "Price on request",
-      toi: { title: "Evening celebrations, tusau kesu & stage performances", desc: "Become the star of the evening! Statement mäsi crafted for night wedding parties, the tusau kesu first-steps ceremony, or stage dance performances — designed to turn heads." },
+      toi: { title: "Sündet toi (circumcision celebration), tusau kesu & stage performances", desc: "Become the star of the celebration! Statement mäsi crafted for the sündet toi circumcision ceremony, the tusau kesu first-steps ceremony, or stage dance performances — designed to turn heads." },
       jeke: { title: "Custom orders for adults", desc: "Bring your dream mäsi to life — from color to embroidery, everything is handcrafted exactly to your wishes and your size.", price: "up to ₸150,000" }
     },
     colors: { tan: "Tan", white: "White", black: "Black", green: "Green", rosegold: "Rose gold", pearl: "Pearl", leopard: "Leopard print", cream: "Cream",
@@ -283,7 +283,7 @@ window.I18N = {
       eyebrow: "Individual buyurtma", title: "Shaxsiy maxsus buyurtma",
       subtitle: "Alohida lahza uchun betakror masi — faqat siz uchun, faqat sizning didingizga mos tikiladi.",
       price_note: "Narxi — kelishuv asosida",
-      toi: { title: "Kechki to'y, tusau kesar va sahna raqsi", desc: "Alohida kechaning qahramoniga aylaning! Kechki to'y, tusau kesar yoki sahna raqsi uchun tikilgan tantanali masi barcha nigohlarni o'ziga tortadi." },
+      toi: { title: "Sunnat to'yi, tusau kesar va sahna raqsi", desc: "Alohida bayramning qahramoniga aylaning! Sunnat to'yi, tusau kesar yoki sahna raqsi uchun tikilgan tantanali masi barcha nigohlarni o'ziga tortadi." },
       jeke: { title: "Kattalar uchun individual buyurtma", desc: "Orzuingizdagi masini haqiqatga aylantiring — rangidan naqshigacha barchasi sizning xohishingiz va o'lchamingizga mos qo'lda tikiladi.", price: "150 000 ₸ gacha" }
     },
     colors: { tan: "Jigarrang", white: "Oq", black: "Qora", green: "Yashil", rosegold: "Atirgul-oltin", pearl: "Marvarid", leopard: "Leopard naqshi", cream: "Krem rang",
@@ -367,7 +367,7 @@ window.I18N = {
       eyebrow: "Жеке буйрутма", title: "Жеке атайын буйрутма берүү",
       subtitle: "Өзгөчө учур үчүн кайталангыс маси — жалгыз гана сиз үчүн, сиздин табитиңизге ылайык тигилет.",
       price_note: "Баасы — макулдашуу боюнча",
-      toi: { title: "Кечки той, түшөө кесер жана сахналык бий", desc: "Өзгөчө кечтин каарманына айланыңыз! Кечки той, түшөө кесер же сахналык бий үчүн тигилген салтанаттуу маси бардык көздөрдү өзүнө тартат." },
+      toi: { title: "Сүннөт той, түшөө кесер жана сахналык бий", desc: "Өзгөчө майрамдын каарманына айланыңыз! Сүннөт той, түшөө кесер же сахналык бий үчүн тигилген салтанаттуу маси бардык көздөрдү өзүнө тартат." },
       jeke: { title: "Чоңдор үчүн жеке буйрутма", desc: "Түшүңүздөгү маситти чындыкка айландырыңыз — түсүнөн оюм-чиймесине чейин баары сиздин каалооңузга жана өлчөмүңүзгө ылайык кол менен тигилет.", price: "150 000 ₸ чейин" }
     },
     colors: { tan: "Күрөң", white: "Ак", black: "Кара", green: "Жашыл", rosegold: "Раушан алтын", pearl: "Берметт", leopard: "Барс оюму", cream: "Кремдей",
@@ -451,7 +451,7 @@ window.I18N = {
       eyebrow: "طلب خاص", title: "طلب مخصص شخصي",
       subtitle: "ماسي فريد للحظتك الخاصة — يُصنع لك وحدك، وفق ذوقك تمامًا.",
       price_note: "السعر حسب الطلب",
-      toi: { title: "حفلات المساء، حفل تُساو كيسر، والعروض الراقصة على المسرح", desc: "كن نجم أمسيتك الخاصة! أحذية ماسي احتفالية مصممة لحفلات الزفاف المسائية، وحفل تُساو كيسر (خطوات الطفل الأولى)، أو العروض الراقصة على المسرح — تلفت كل الأنظار." },
+      toi: { title: "حفل الختان (سُندت توي)، حفل تُساو كيسر، والعروض الراقصة على المسرح", desc: "كن نجم الاحتفال الخاص! أحذية ماسي احتفالية مصممة لحفل الختان (سُندت توي)، وحفل تُساو كيسر (خطوات الطفل الأولى)، أو العروض الراقصة على المسرح — تلفت كل الأنظار." },
       jeke: { title: "طلب مخصص للبالغين", desc: "حوّل ماسي أحلامك إلى حقيقة — من اللون إلى الزخرفة، كل التفاصيل تُصنع يدويًا وفق رغبتك ومقاسك بالضبط.", price: "حتى ١٥٠٬٠٠٠ ₸" }
     },
     colors: { tan: "بني فاتح", white: "أبيض", black: "أسود", green: "أخضر", rosegold: "ذهبي وردي", pearl: "لؤلؤي", leopard: "نقشة النمر", cream: "كريمي",
@@ -535,7 +535,7 @@ window.I18N = {
       eyebrow: "Özel Sipariş", title: "Kişiye Özel Sipariş",
       subtitle: "Özel anınız için eşsiz bir mesi — yalnızca size, tamamen zevkinize göre dikilir.",
       price_note: "Fiyat talebe göre belirlenir",
-      toi: { title: "Gece düğünleri, tusau keser ve sahne dansı", desc: "Özel bir gecenin yıldızı olun! Gece düğünleri, tusau keser (ilk adım) töreni veya sahne dansı için dikilen gösterişli mesi tüm dikkatleri üzerine çeker." },
+      toi: { title: "Sünnet düğünü (sündet toi), tusau keser ve sahne dansı", desc: "Özel bir kutlamanın yıldızı olun! Sünnet düğünü, tusau keser (ilk adım) töreni veya sahne dansı için dikilen gösterişli mesi tüm dikkatleri üzerine çeker." },
       jeke: { title: "Yetişkinler için özel sipariş", desc: "Hayalinizdeki mesiyi gerçeğe dönüştürün — renginden motifine kadar her şey isteğinize ve ölçünüze göre elde dikilir.", price: "150.000 ₸'ye kadar" }
     },
     colors: { tan: "Taba", white: "Beyaz", black: "Siyah", green: "Yeşil", rosegold: "Rose gold", pearl: "İnci", leopard: "Leopar desenli", cream: "Krem",
@@ -619,7 +619,7 @@ window.I18N = {
       eyebrow: "定制服务", title: "个性化专属定制",
       subtitle: "为您的特别时刻打造独一无二的马西靴——完全按照您的喜好，专属为您缝制。",
       price_note: "价格面议",
-      toi: { title: "晚间庆典、剪脐带仪式与舞台表演", desc: "成为当晚的焦点！专为晚间婚礼庆典、图绍克瑟尔（婴儿学步礼）或舞台舞蹈表演打造的华丽马西靴，让您光彩夺目。" },
+      toi: { title: "割礼庆典、婴儿学步礼与舞台表演", desc: "成为庆典的焦点！专为割礼庆典（森德特托伊）、图绍克瑟尔（婴儿学步礼）或舞台舞蹈表演打造的华丽马西靴，让您光彩夺目。" },
       jeke: { title: "成人个性化定制", desc: "让您梦想中的马西靴成为现实——从颜色到图案，完全按照您的意愿与脚型纯手工缝制。", price: "最高150,000坚戈" }
     },
     colors: { tan: "棕黄色", white: "白色", black: "黑色", green: "深绿色", rosegold: "玫瑰金色", pearl: "珍珠白", leopard: "豹纹", cream: "奶油色",
