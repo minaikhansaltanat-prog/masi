@@ -426,7 +426,7 @@
   .footer-wechat-qr{ background:#fff; padding:6px; border-radius:12px; box-shadow:0 10px 24px -8px rgba(0,0,0,.45); }
   .footer-wechat-qr img{ display:block; width:76px; height:76px; border-radius:4px; }
   .footer-wechat span{ font-size:11.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gold-light); }
-  .footer-bottom{ margin-top:30px; padding-top:24px; border-top:1px solid rgba(255,255,255,.08); display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; font-size:12.5px; }
+  .footer-bottom{ margin-top:30px; padding-top:24px; padding-inline-end:84px; border-top:1px solid rgba(255,255,255,.08); display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; font-size:12.5px; }
 
   /* ============ WHATSAPP FLOAT ============ */
   .wa-float{
@@ -442,6 +442,16 @@
   .reveal{ transition:opacity .7s var(--ease), transform .7s var(--ease); }
   .reveal.pre{ opacity:0; transform:translateY(24px); }
 
+  .promo-bar{ background:linear-gradient(90deg,var(--leather-deep),var(--leather) 55%,var(--leather-deep)); color:var(--gold-light); text-align:center; font-size:13.5px; font-weight:600; padding:9px 16px; line-height:1.4; }
+  .promo-bar a{ color:inherit; }
+  .promo-bar a[href]{ text-decoration:underline; text-underline-offset:3px; }
+  .footer-copy{ display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; }
+  .admin-link{ display:inline-flex; align-items:center; gap:6px; min-height:28px; padding:0 11px; border:1px dashed rgba(244,236,223,.22); border-radius:99px; font-size:11.5px; color:rgba(244,236,223,.5); transition:color .2s, border-color .2s; }
+  .admin-link:hover,.admin-link:focus-visible{ color:var(--gold-light); border-color:var(--gold-dim); }
+  .admin-link svg{ width:12px; height:12px; flex:none; }
+  .rmedia{ width:100%; border-radius:12px; background:#1a0f08; max-height:240px; }
+  audio.rmedia{ background:none; height:44px; }
+
   .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 </style>
 
@@ -450,7 +460,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-row">
     <a href="#hero" class="brand" aria-label="GUMYR">
-      <img src="assets/images/brand/logo.png" alt="GUMYR logo" width="120" height="40">
+      <img src="assets/images/brand/logo.png" data-set-src="logo" alt="GUMYR logo" width="120" height="40">
     </a>
     <nav class="main-nav" aria-label="Негізгі мәзір">
       <a href="#hero" data-i18n="nav.home"></a>
@@ -473,11 +483,12 @@
   </div>
 </header>
 <div class="header-spacer"></div>
+<div class="promo-bar" id="promoBar" style="display:none"><a id="promoLink" data-i18n="banner.text"></a></div>
 
 <nav class="mobile-nav" id="mobileNav" aria-label="Мобильді мәзір">
   <div class="mobile-nav-top">
     <a href="#hero" class="brand">
-      <img src="assets/images/brand/logo.png" alt="GUMYR" style="height:32px;filter:brightness(0) invert(1)">
+      <img src="assets/images/brand/logo.png" data-set-src="logo" alt="GUMYR" style="height:32px;filter:brightness(0) invert(1)">
     </a>
     <button class="mobile-nav-close" id="mobileNavClose" aria-label="Жабу">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -576,14 +587,14 @@
       </div>
       <div class="sizing-grid reveal">
         <div class="sizing-card">
-          <div class="sizing-card-img"><img src="assets/images/sizing/leg-diagram.jpg" alt="Balance height measurement diagram" loading="lazy"></div>
+          <div class="sizing-card-img"><img src="assets/images/sizing/leg-diagram.jpg" data-set-src="sizingLeg" alt="Balance height measurement diagram" loading="lazy"></div>
           <div class="sizing-card-body">
             <h3 data-i18n="sizing.card1_title"></h3>
             <p data-i18n="sizing.card1_text"></p>
           </div>
         </div>
         <div class="sizing-card">
-          <div class="sizing-card-img"><img src="assets/images/sizing/foot-diagram.jpg" alt="Foot shape measurement diagram" loading="lazy"></div>
+          <div class="sizing-card-img"><img src="assets/images/sizing/foot-diagram.jpg" data-set-src="sizingFoot" alt="Foot shape measurement diagram" loading="lazy"></div>
           <div class="sizing-card-body">
             <h3 data-i18n="sizing.card2_title"></h3>
             <p data-i18n="sizing.card2_text"></p>
@@ -598,7 +609,7 @@
             <p data-i18n="sizing.video_desc"></p>
           </div>
         </div>
-        <a class="yt-cta" href="https://www.youtube.com/@gumirkz" target="_blank" rel="noopener">
+        <a class="yt-cta" href="https://www.youtube.com/@gumirkz" data-set-href="videoGuide" data-hide-empty target="_blank" rel="noopener">
           <span data-i18n="sizing.video_cta"></span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
         </a>
@@ -621,28 +632,7 @@
         <p data-i18n="about.p1"></p>
         <p data-i18n="about.p2"></p>
       </div>
-      <div class="about-features reveal">
-        <div class="about-feature">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6-5.5-3-5.5 3 1-6L3 8.9 9 8z"/></svg></div>
-          <h4 data-i18n="about.f1t"></h4><p data-i18n="about.f1d"></p>
-        </div>
-        <div class="about-feature">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9C.5 8 3 3.5 7 3.5c2 0 3.8 1.2 5 3 1.2-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
-          <h4 data-i18n="about.f2t"></h4><p data-i18n="about.f2d"></p>
-        </div>
-        <div class="about-feature">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12c2-4 6-6 8-6s6 2 8 6c-2 4-6 6-8 6s-6-2-8-6z"/><circle cx="12" cy="12" r="2.4"/></svg></div>
-          <h4 data-i18n="about.f3t"></h4><p data-i18n="about.f3d"></p>
-        </div>
-        <div class="about-feature">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
-          <h4 data-i18n="about.f4t"></h4><p data-i18n="about.f4d"></p>
-        </div>
-        <div class="about-feature">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8c0-3 3-5 7-5s7 2 7 5v3c0 4-3 8-7 8s-7-4-7-8V8z"/><circle cx="9.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><path d="M9 15c1.2 1 4.8 1 6 0"/></svg></div>
-          <h4 data-i18n="about.f5t"></h4><p data-i18n="about.f5d"></p>
-        </div>
-      </div>
+      <div class="about-features reveal" id="aboutFeatures"></div>
     </div>
   </section>
 
@@ -683,7 +673,7 @@
               <h3 data-i18n="reviews.gis_title"></h3>
               <p data-i18n="reviews.gis_desc"></p>
             </div>
-            <a class="gis-cta" id="gisLink" href="https://2gis.kz/almaty/search/GUMIR.KZ" target="_blank" rel="noopener">
+            <a class="gis-cta" id="gisLink" href="https://2gis.kz/almaty/search/GUMIR.KZ" data-set-href="gis" data-hide-empty target="_blank" rel="noopener">
               <span data-i18n="reviews.gis_cta"></span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
             </a>
@@ -708,25 +698,25 @@
           </div>
           <div class="info-row">
             <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></div>
-            <div><div class="info-label" data-i18n="contact.phone_label"></div><div class="info-value"><a href="tel:+77089859284">+7 708 985 9284</a></div></div>
+            <div><div class="info-label" data-i18n="contact.phone_label"></div><div class="info-value"><a href="tel:+77089859284" data-set-href="phone" data-prefix="tel:" data-set-text="phoneDisplay">+7 708 985 9284</a></div></div>
           </div>
           <div class="info-row">
             <div class="info-ic"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3z"/></svg></div>
-            <div><div class="info-label" data-i18n="contact.whatsapp_label"></div><div class="info-value"><a id="contactWa" href="#" target="_blank" rel="noopener">+7 708 985 9284</a></div></div>
+            <div><div class="info-label" data-i18n="contact.whatsapp_label"></div><div class="info-value"><a id="contactWa" href="#" target="_blank" rel="noopener" data-set-text="phoneDisplay">+7 708 985 9284</a></div></div>
           </div>
           <div class="info-row">
             <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
-            <div><div class="info-label" data-i18n="contact.email_label"></div><div class="info-value"><a href="mailto:erlanbeisen8@gmail.com">erlanbeisen8@gmail.com</a></div></div>
+            <div><div class="info-label" data-i18n="contact.email_label"></div><div class="info-value"><a href="mailto:erlanbeisen8@gmail.com" data-set-href="email" data-prefix="mailto:" data-set-text="email">erlanbeisen8@gmail.com</a></div></div>
           </div>
           <div class="info-row">
             <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
             <div><div class="info-label" data-i18n="contact.hours_label"></div><div class="info-value" data-i18n="contact.hours_value"></div></div>
           </div>
           <div class="social-row">
-            <a class="social-btn" href="https://www.instagram.com/p/DUqIW-zCiGO/?igsi=bHBvZDRhaWZtdW5k" target="_blank" rel="noopener" aria-label="Instagram">
+            <a class="social-btn" href="https://www.instagram.com/p/DUqIW-zCiGO/?igsi=bHBvZDRhaWZtdW5k" data-set-href="instagram" data-hide-empty target="_blank" rel="noopener" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
             </a>
-            <a class="social-btn" href="https://www.youtube.com/@gumirkz" target="_blank" rel="noopener" aria-label="YouTube">
+            <a class="social-btn" href="https://www.youtube.com/@gumirkz" data-set-href="youtube" data-hide-empty target="_blank" rel="noopener" aria-label="YouTube">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21.5 7.6a3 3 0 0 0-2.1-2.1C17.6 5 12 5 12 5s-5.6 0-7.4.5A3 3 0 0 0 2.5 7.6 31 31 0 0 0 2 12a31 31 0 0 0 .5 4.4 3 3 0 0 0 2.1 2.1C6.4 19 12 19 12 19s5.6 0 7.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.5-4.4z"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke-linejoin="round"/></svg>
             </a>
             <a class="social-btn" id="socialWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -759,10 +749,10 @@
   <div class="container">
     <div class="footer-row">
       <div class="footer-brand">
-        <img src="assets/images/brand/logo.png" alt="GUMYR">
+        <img src="assets/images/brand/logo.png" data-set-src="logo" alt="GUMYR">
       </div>
-      <div class="footer-wechat">
-        <div class="footer-wechat-qr"><img src="assets/images/brand/wechat-qr.png" alt="WeChat QR code" width="76" height="76" loading="lazy"></div>
+      <div class="footer-wechat" data-hide-if-empty="wechatQr">
+        <div class="footer-wechat-qr"><img src="assets/images/brand/wechat-qr.png" data-set-src="wechatQr" alt="WeChat QR code" width="76" height="76" loading="lazy"></div>
         <span>WeChat</span>
       </div>
       <div class="footer-legal">
@@ -772,7 +762,8 @@
     </div>
     <div class="footer-bottom">
       <div data-i18n="footer.tagline"></div>
-      <div>© <span id="yearNow"></span> GUMYR · <span data-i18n="footer.rights"></span></div>
+      <div class="footer-copy"><span>© <span id="yearNow"></span> GUMYR · <span data-i18n="footer.rights"></span></span>
+        <a class="admin-link" id="adminLink" href="#" target="_blank" rel="noopener nofollow" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span data-i18n="footer.admin"></span></a></div>
     </div>
   </div>
 </footer>
@@ -782,5 +773,5 @@
   <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.3.66 4.45 1.8 6.28L4 29l7.9-1.75A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3zm0 21.7c-1.98 0-3.85-.55-5.44-1.5l-.39-.23-4.24.94.9-4.1-.25-.42A9.6 9.6 0 0 1 5.4 15c0-5.86 4.77-10.62 10.62-10.62S26.64 9.14 26.64 15 21.87 24.7 16.02 24.7zm5.85-7.94c-.32-.16-1.9-.94-2.2-1.05-.3-.1-.5-.16-.72.16-.21.32-.83 1.04-1.02 1.26-.19.21-.37.24-.69.08-.32-.16-1.34-.5-2.55-1.58-.94-.84-1.58-1.87-1.76-2.19-.19-.32-.02-.5.14-.65.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.67 0 1.57 1.15 3.09 1.31 3.3.16.21 2.26 3.45 5.47 4.84.76.33 1.36.52 1.82.67.77.24 1.46.21 2.02.13.62-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
 </a>
 
-<script src="assets/js/i18n.js"></script>
+<script src="assets/js/content.js"></script>
 <script src="assets/js/main.js"></script>

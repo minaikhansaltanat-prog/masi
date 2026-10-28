@@ -1,0 +1,12 @@
+{
+  "name": "gumyr-admin",
+  "private": true,
+  "type": "module",
+  "description": "GUMYR content admin panel (Vercel)",
+  "engines": { "node": ">=20" },
+  "dependencies": { "@vercel/blob": "^2.0.0" },
+  "devDependencies": { "esbuild": "^0.25.0" },
+  "scripts": {
+    "build:client": "esbuild vendor-src/blob-client.js --bundle --format=esm --minify --outfile=public/vendor/blob-client.js"
+  }
+}
